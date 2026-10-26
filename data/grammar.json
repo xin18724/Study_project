@@ -1,0 +1,1388 @@
+{
+  "topics": [
+    {
+      "id": "past-vs-present-perfect",
+      "category": "时态语态",
+      "title": "一般过去时与现在完成时",
+      "description": "抓住时间状语和动作与现在的联系，告别凭感觉选时态。",
+      "lesson": {
+        "rule": "一般过去时强调过去某个已结束的时间发生了什么，常与 yesterday、last week、...ago 等连用。现在完成时强调过去发生的动作对现在造成的影响，或从过去持续到现在；常见提示词有 already、yet、just、since、for。",
+        "examples": [
+          { "sentence": "I saw the film yesterday.", "translation": "我昨天看了这部电影。（明确的过去时间）" },
+          { "sentence": "I have seen the film, so I know the story.", "translation": "我看过这部电影，所以我知道情节。（影响现在）" },
+          { "sentence": "She has lived here for five years.", "translation": "她住在这里五年了。（持续到现在）" }
+        ],
+        "tip": "看到明确且已结束的过去时间，优先一般过去时；没有具体过去时间，且强调结果或持续到现在，考虑现在完成时。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "—_____ you _____ the new science museum?\n—Yes. I _____ there with my classmates last Saturday.",
+          "options": ["A. Have; visited; went", "B. Did; visit; have gone", "C. Have; visited; have gone", "D. Did; visited; went"],
+          "answer": 0,
+          "explanation": "第一空询问是否有过参观经历，没有指定过去时间，用现在完成时 Have you visited；第二句有 last Saturday，时间明确且已结束，用一般过去时 went。",
+          "optionExplanations": [
+            "正确。现在完成时询问经历，last Saturday 搭配一般过去时。",
+            "错误。Did 后要接动词原形 visit；而 last Saturday 不能与 have gone 连用。",
+            "错误。第二句的 last Saturday 是明确的过去时间，不能用 have gone。",
+            "错误。Did 后应接原形 visit，不能用过去式 visited。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "My brother _____ in this school since 2022, and he still studies here.",
+          "options": ["A. studied", "B. has studied", "C. studies", "D. is studying"],
+          "answer": 1,
+          "explanation": "since 2022 表示从过去某时开始并持续到现在，且 he still studies here 明确说明状态仍在继续，使用现在完成时 has studied。",
+          "optionExplanations": [
+            "错误。一般过去时表示过去结束的动作，不能表达一直持续到现在。",
+            "正确。主语 My brother 是第三人称单数，使用 has studied；since 引出起点。",
+            "错误。一般现在时只陈述习惯或现状，未体现从 2022 延续至今。",
+            "错误。现在进行时强调此刻正在进行，不能与 since 2022 表示的持续时间搭配表达这一含义。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "I _____ my homework, so I can go out now.",
+          "options": ["A. finished", "B. have finished", "C. finish", "D. had finished"],
+          "answer": 1,
+          "explanation": "说话人现在可以出门，说明过去完成作业这一动作对现在产生了结果，使用现在完成时 have finished。",
+          "optionExplanations": [
+            "错误。一般过去时只陈述过去发生的事，句子重点是作业完成后对现在的影响。",
+            "正确。现在完成时表示过去完成作业这一动作带来的现在结果：现在可以出门。",
+            "错误。一般现在时表达习惯或事实，不能说明作业已经完成。",
+            "错误。过去完成时需要另一个过去时间或动作作参照，句中只有现在的结果。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "We _____ (visit) the science museum last Sunday.",
+          "answerText": "visited",
+          "explanation": "last Sunday 指明确且已经结束的过去时间，因此用一般过去时。visit 是规则动词，过去式加 -ed，填 visited。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "I _____ (not finish) my project yet, so I can't hand it in.",
+          "answerText": "haven't finished",
+          "explanation": "yet 常用于现在完成时的否定句，表示截至现在“还没有完成”；后半句说明目前仍不能交项目，强调动作对现在的影响。主语 I 搭配 have not，缩写为 haven't；finish 的过去分词是 finished。"
+        }
+      ]
+    },
+    {
+      "id": "present-simple-vs-continuous",
+      "category": "时态语态",
+      "title": "一般现在时与现在进行时",
+      "description": "分清日常习惯、客观事实和眼前正在发生的动作。",
+      "lesson": {
+        "rule": "一般现在时表示习惯、规律或客观事实，主语为第三人称单数时，动词通常加 -s/-es。现在进行时表示此刻或现阶段正在进行的动作，结构为 am/is/are + 动词-ing。注意：know、believe 等状态动词通常不用进行时。",
+        "examples": [
+          { "sentence": "Mia takes the bus to school every day.", "translation": "Mia 每天乘公交车上学。（日常习惯）" },
+          { "sentence": "Mia is waiting for the bus now.", "translation": "Mia 现在正在等公交车。（此刻正在发生）" }
+        ],
+        "tip": "先找时间线索：every day、usually 多表示习惯；now、Look!、Listen! 常提示眼前动作。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "Leo usually _____ his homework after dinner, but tonight he _____ for a school play.",
+          "options": ["A. does; is practicing", "B. is doing; practices", "C. does; practices", "D. is doing; is practicing"],
+          "answer": 0,
+          "explanation": "usually 表示 Leo 的日常习惯，第一空用一般现在时 does。tonight 在这里指今晚正在进行的特别安排，第二空用现在进行时 is practicing。",
+          "optionExplanations": [
+            "正确。usually 对应习惯，用 does；tonight 指当前这段时间的活动，用 is practicing。",
+            "错误。第一空的 usually 表示习惯，不用现在进行时 is doing。",
+            "错误。第二空说的是今晚正在进行的特别活动，应使用现在进行时 is practicing。",
+            "错误。第一空有 usually，表达习惯，应使用一般现在时 does。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "—Why _____ you _____ at the screen?\n—The teacher _____ us how to solve this problem.",
+          "options": ["A. do; look; shows", "B. are; looking; is showing", "C. are; looking; shows", "D. do; looking; is showing"],
+          "answer": 1,
+          "explanation": "问话中的 Why ...? 询问此刻正在做什么，look 是动作动词，使用现在进行时 are looking。老师此刻正在讲解，也用 is showing。",
+          "optionExplanations": [
+            "错误。问的是眼下正在看屏幕的原因，不是日常习惯；而 shows 也没有表达老师此刻正在讲解。",
+            "正确。现在进行时疑问句结构为 be 动词 + 主语 + 动词-ing；陈述句中用 is showing。",
+            "错误。第一空正确，但第二空描述老师此刻正在讲解，应为 is showing。",
+            "错误。现在进行时疑问句需要 are + looking，不能用 do + looking。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "I _____ the answer, but I _____ why the others are still discussing it.",
+          "options": ["A. am knowing; don't understand", "B. know; am not understanding", "C. know; don't understand", "D. am knowing; am not understanding"],
+          "answer": 2,
+          "explanation": "know 和 understand 在这里表示认知状态，通常不用于现在进行时，因此两空都用一般现在时。主语 I 搭配 know 和 don't understand。",
+          "optionExplanations": [
+            "错误。know 表示认知状态，通常不说 am knowing；此处 understand 也表达认知状态，应用一般现在时。",
+            "错误。know 的形式正确，但 understand 在这里表示理解这一状态，通常不用 am not understanding。",
+            "正确。know 和 understand 都是状态动词，此处使用一般现在时；I 的否定形式为 don't understand。",
+            "错误。know 和 understand 在此均表示状态，不适合用现在进行时。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "Our school library _____ (open) at 8 a.m. on weekdays.",
+          "answerText": "opens",
+          "explanation": "句中 on weekdays 表示每个工作日都遵循的固定安排，使用一般现在时。主语 Our school library 是第三人称单数，所以 open 变为 opens。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "Please be quiet. The baby _____ (sleep) in the next room.",
+          "answerText": "is sleeping",
+          "explanation": "Please be quiet 提示说话人要求现在保持安静，原因是宝宝此刻正在睡觉。现在进行时结构为 am/is/are + 动词-ing；主语 The baby 是单数，因此填 is sleeping。"
+        }
+      ]
+    },
+    {
+      "id": "past-continuous-vs-simple-past",
+      "category": "时态语态",
+      "title": "过去进行时与一般过去时",
+      "description": "分清过去某刻正在进行的动作与过去已经发生或完成的动作。",
+      "lesson": {
+        "rule": "过去进行时表示过去某一时刻或另一动作发生时，动作正在进行，结构为 was/were + 动词-ing；一般过去时表示过去发生或完成的动作。常见结构是 when 引出短暂动作（一般过去时），另一个背景动作使用过去进行时。具体语境比单看 when、while 更重要。",
+        "examples": [
+          { "sentence": "At 8 p.m. last night, I was reading in my room.", "translation": "昨晚八点我正在房间里看书。（过去某一时刻正在进行）" },
+          { "sentence": "I was reading when my friend called.", "translation": "朋友打电话时，我正在看书。（背景动作进行中，电话打来）" },
+          { "sentence": "My friend called me last night.", "translation": "我朋友昨晚给我打了电话。（过去发生的动作）" }
+        ],
+        "tip": "问自己：句子是在交代过去某刻“正在做什么”，还是在叙述一个已经发生的事件？前者用过去进行时，后者通常用一般过去时。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "At 6:15 yesterday, the school band _____ in the hall. Its rehearsal lasted from 6 to 7.",
+          "options": ["A. practiced", "B. was practicing", "C. practices", "D. has practiced"],
+          "answer": 1,
+          "explanation": "6:15 是过去某一具体时刻，且排练从 6 点持续到 7 点，说明 6:15 时动作正在进行，使用过去进行时 was practicing。",
+          "optionExplanations": [
+            "错误。practiced 叙述过去发生或完成的动作，没有突出 6:15 时正在进行。",
+            "正确。主语 the school band 是单数，用 was practicing 表示过去某时正在排练。",
+            "错误。practices 是一般现在时，不符合 yesterday 的过去时间背景。",
+            "错误。has practiced 是现在完成时，不能与明确的过去时刻 6:15 yesterday 搭配表达该动作。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "The doorbell rang while we _____ dinner.",
+          "options": ["A. had", "B. were having", "C. have", "D. are having"],
+          "answer": 1,
+          "explanation": "门铃响是过去发生的短暂动作；门铃响时，我们正在吃晚饭，属于持续中的背景动作，因此用过去进行时 were having。",
+          "optionExplanations": [
+            "错误。had 是一般过去时，没有表达门铃响时吃饭动作正在进行。",
+            "正确。主语 we 搭配 were，were having 表示门铃响时正在吃晚饭。",
+            "错误。have 是一般现在时，与句中的过去事件不一致。",
+            "错误。are having 是现在进行时，表示现在正在吃饭，不符合过去的叙述背景。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "I _____ home when I saw a deer cross the road.",
+          "options": ["A. was cycling", "B. cycled", "C. am cycling", "D. have cycled"],
+          "answer": 0,
+          "explanation": "看到鹿是过去发生的短暂事件；看到鹿时，“我”正在骑车回家。背景动作使用过去进行时 was cycling。",
+          "optionExplanations": [
+            "正确。主语 I 搭配 was，was cycling 表示当时正在骑车回家。",
+            "错误。cycled 通常叙述已发生或完成的动作，没有突出看到鹿时动作仍在进行。",
+            "错误。am cycling 是现在进行时，不能用于过去的叙述场景。",
+            "错误。have cycled 是现在完成时，不能与 saw 引出的明确过去事件搭配表达当时正在进行的动作。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "At this time yesterday, I _____ (wait) for the bus.",
+          "answerText": "was waiting",
+          "explanation": "At this time yesterday 指过去某一具体时刻；句子描述那一刻正在等车，用过去进行时。主语 I 搭配 was，wait 加 -ing，填 was waiting。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "The dog _____ (sleep) when the delivery driver knocked on the door.",
+          "answerText": "was sleeping",
+          "explanation": "knocked on the door 是过去发生的短暂动作；敲门时狗正在睡觉，使用过去进行时。主语 The dog 是单数，填 was sleeping。"
+        }
+      ]
+    },
+    {
+      "id": "passive-voice-basics",
+      "category": "时态语态",
+      "title": "被动语态基础",
+      "description": "掌握 be + 过去分词，按时间调整 be 的形式，并注意短语中的介词。",
+      "lesson": {
+        "rule": "当主语是动作的承受者，或我们更想强调动作本身时，常用被动语态：主语 + be + 过去分词。be 要根据时态、主语的人称和数变化；情态动词后用“情态动词 + be + 过去分词”。短语动词变被动时，原有介词不能漏。",
+        "examples": [
+          { "sentence": "The classrooms are cleaned every afternoon.", "translation": "教室每天下午都会打扫。（一般现在时被动：are + cleaned）" },
+          { "sentence": "The school hall is being repaired this week.", "translation": "学校礼堂本周正在维修。（现在进行时被动：is being + repaired）" },
+          { "sentence": "The baby must be taken care of.", "translation": "这个婴儿必须有人照顾。（情态动词 + be + 过去分词，保留 of）" }
+        ],
+        "tip": "先找“谁承受动作”，再确定时态并变化 be，最后检查主要动词是否用了过去分词。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "The science lab _____ every evening after the last class.",
+          "options": ["A. is cleaned", "B. cleans", "C. was cleaned", "D. has cleaned"],
+          "answer": 0,
+          "explanation": "every evening 表示反复发生的日常安排，用一般现在时。实验室是“被打扫”的对象，因此用被动语态；主语 The science lab 是单数，结构为 is + cleaned。",
+          "optionExplanations": [
+            "正确。一般现在时被动结构为 am/is/are + 过去分词；单数主语搭配 is cleaned。",
+            "错误。cleans 是主动形式，表示实验室自己打扫，主语与动作关系不合。",
+            "错误。was cleaned 是一般过去时被动，与 every evening 表示的日常安排不符。",
+            "错误。has cleaned 是主动形式，且一般现在时语境强调日常安排，不用现在完成时。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "The school library _____ last year and now has more study spaces.",
+          "options": ["A. renovates", "B. was renovated", "C. is renovated", "D. has renovated"],
+          "answer": 1,
+          "explanation": "last year 指明确且已经结束的过去时间，使用一般过去时。图书馆是被翻修的对象，因此用被动语态 was renovated。",
+          "optionExplanations": [
+            "错误。renovates 是主动形式，意思变成图书馆翻修别的事物；而图书馆是动作承受者。",
+            "正确。过去时间 last year 对应 was；被动结构为 was + 过去分词 renovated。",
+            "错误。is renovated 是一般现在时被动，与明确的过去时间 last year 不符。",
+            "错误。has renovated 是主动形式，而且现在完成时通常不与已结束的具体过去时间 last year 连用。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "The results of the writing competition _____ on the school website tomorrow.",
+          "options": ["A. will announce", "B. are announced", "C. will be announced", "D. have been announced"],
+          "answer": 2,
+          "explanation": "tomorrow 表示将来，比赛结果是“被公布”的对象，因此用一般将来时被动结构 will be + 过去分词，即 will be announced。",
+          "optionExplanations": [
+            "错误。will announce 是主动语态，表示结果主动公布其他内容。",
+            "错误。are announced 是一般现在时被动，不能表达句中 tomorrow 的将来时间。",
+            "正确。一般将来时被动结构为 will be + 过去分词；announce 的过去分词是 announced。",
+            "错误。have been announced 是现在完成时被动，表示截至现在已经公布，与 tomorrow 的将来时间冲突。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "Look! The old bridge _____ (repair) at the moment.",
+          "answerText": "is being repaired",
+          "explanation": "Look! 和 at the moment 表明维修正在此刻进行；桥是被维修的对象，所以用现在进行时被动结构 am/is/are + being + 过去分词。主语 The old bridge 是单数，填 is being repaired。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "All the students must _____ (inform) about the change before the trip.",
+          "answerText": "be informed",
+          "explanation": "学生是“被告知”的对象，句子使用被动语态。情态动词 must 后接动词原形，因此结构为 must + be + 过去分词，inform 的过去分词是 informed，填 be informed。"
+        }
+      ]
+    },
+    {
+      "id": "relative-clauses-pronouns",
+      "category": "定语从句",
+      "title": "定语从句：关系代词",
+      "description": "根据先行词和从句中的成分，选择 who、whom、which 或 whose。",
+      "lesson": {
+        "rule": "关系代词连接先行词和定语从句，并在从句中充当主语、宾语或定语。先行词指人时，常用 who（作主语）或 whom（作宾语）；指物时常用 which；表示“谁的”时用 whose，后面接名词。作宾语的关系代词有时可以省略。",
+        "examples": [
+          { "sentence": "The girl who won the speech contest is my cousin.", "translation": "赢得演讲比赛的那个女孩是我表妹。（who 在从句中作主语）" },
+          { "sentence": "This is the camera which my uncle gave me.", "translation": "这就是我叔叔给我的那台相机。（which 在从句中作宾语）" },
+          { "sentence": "I know a boy whose mother is a doctor.", "translation": "我认识一个男孩，他的妈妈是一名医生。（whose 表所属，后接 mother）" }
+        ],
+        "tip": "先看先行词指人还是物，再检查从句缺主语、宾语还是“……的”。不要只凭离空格最近的名词判断。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "The student _____ won the English speech contest will represent our school.",
+          "options": ["A. whom", "B. whose", "C. who", "D. which"],
+          "answer": 2,
+          "explanation": "先行词是指人的 The student；从句 _____ won the English speech contest 缺少主语，因此用 who。",
+          "optionExplanations": [
+            "错误。whom 指人，但通常在从句中作宾语；此处空格是 won 的主语。",
+            "错误。whose 表示所属，后面通常要接名词；空格后直接接谓语 won。",
+            "正确。先行词指人，且关系代词在从句中作主语，用 who。",
+            "错误。which 通常指物，不能指代这里的人。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "The documentary _____ we watched in history class was about ancient China.",
+          "options": ["A. who", "B. which", "C. whose", "D. whom"],
+          "answer": 1,
+          "explanation": "先行词 The documentary 指物；从句 we watched _____ 缺少 watched 的宾语，因此用 which。作宾语时 which 也可以省略。",
+          "optionExplanations": [
+            "错误。who 指人，不用于指代 documentary。",
+            "正确。先行词指物，which 在从句中作 watched 的宾语。",
+            "错误。whose 表所属，后面需要接名词；这里空格后是完整的主谓结构 we watched。",
+            "错误。whom 指人并作宾语，不能指代 documentary。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "The family _____ house was damaged in the storm is staying with relatives.",
+          "options": ["A. who", "B. which", "C. whom", "D. whose"],
+          "answer": 3,
+          "explanation": "从句中的 house 属于先行词 The family，表示“这家人的房子”，需要用 whose 表示所属关系；whose 后直接接名词 house。",
+          "optionExplanations": [
+            "错误。who 指人并在从句中作主语，不能表达 house 与 family 的所属关系。",
+            "错误。which 指物，不能放在名词 house 前表达“这家人的房子”。",
+            "错误。whom 指人并作宾语，不能表达所属关系，也不能直接修饰 house。",
+            "正确。whose 表所属关系，whose house 意为“这家人的房子”。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "The woman _____ teaches us English is from Canada.",
+          "answerText": "who",
+          "explanation": "先行词 The woman 指人；定语从句中缺少 teaches 的主语，因此填 who。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "This is the phone _____ my brother bought for me last month.",
+          "answerText": "which",
+          "explanation": "先行词 the phone 指物；从句 my brother bought _____ for me last month 缺少 bought 的宾语，因此填 which。作宾语时关系代词可以省略，但按题目要求填写关系代词。"
+        }
+      ]
+    },
+    {
+      "id": "relative-clauses-adverbs",
+      "category": "定语从句",
+      "title": "定语从句：关系副词",
+      "description": "根据从句表达的时间、地点或原因，辨认 when、where 和 why。",
+      "lesson": {
+        "rule": "关系副词 when、where、why 分别指时间、地点和原因，并在从句中作时间、地点或原因状语。判断时要检查从句是否已有完整的主语和宾语：如果缺少主语或宾语，通常要用关系代词；如果成分完整、缺少状语，才考虑关系副词。关系副词常可分别替换为“介词 + which”。",
+        "examples": [
+          { "sentence": "I remember the day when we first met.", "translation": "我记得我们第一次见面的那一天。（when = on which，作时间状语）" },
+          { "sentence": "This is the town where my father grew up.", "translation": "这就是我父亲长大的那个小镇。（where = in which，作地点状语）" },
+          { "sentence": "Tell me the reason why you chose this course.", "translation": "告诉我你选择这门课程的原因。（why = for which，作原因状语）" }
+        ],
+        "tip": "不要只看先行词是时间、地点还是 reason；还要看从句是否缺少主语或宾语。成分完整、缺状语时，才用关系副词。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "The town _____ my grandfather grew up is now a popular tourist destination.",
+          "options": ["A. when", "B. why", "C. where", "D. whose"],
+          "answer": 2,
+          "explanation": "先行词 The town 表示地点；从句 my grandfather grew up 成分完整，缺少表示地点的状语。where 相当于 in which。",
+          "optionExplanations": [
+            "错误。when 表示时间，不能修饰地点先行词 town。",
+            "错误。why 表示原因，不能表达“在这个小镇长大”的地点关系。",
+            "正确。where 作地点状语，相当于 in which：the town in which my grandfather grew up。",
+            "错误。whose 表示所属，后面需要接名词；从句中不缺所属限定词。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "Do you remember the evening _____ our team won the final match?",
+          "options": ["A. where", "B. when", "C. why", "D. which"],
+          "answer": 1,
+          "explanation": "先行词 the evening 表示时间；从句 our team won the final match 已有主语和宾语，缺少时间状语，因此用 when，相当于 on which。",
+          "optionExplanations": [
+            "错误。where 表示地点，而 the evening 指时间。",
+            "正确。when 作时间状语，相当于 on which：the evening on which our team won。",
+            "错误。why 表示原因，不能表达“在那个晚上”的时间关系。",
+            "错误。which 作关系代词时需要在从句中充当主语或宾语；此处从句主谓宾完整，缺的是时间状语。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "The reason _____ the shop closed early was a power cut.",
+          "options": ["A. why", "B. where", "C. when", "D. whose"],
+          "answer": 0,
+          "explanation": "先行词 The reason 表示原因；从句 the shop closed early 成分完整，缺少原因状语，因此用 why，相当于 for which。",
+          "optionExplanations": [
+            "正确。why 引导定语从句并作原因状语，相当于 for which。",
+            "错误。where 表示地点状语，不能解释商店提前关门的原因。",
+            "错误。when 表示时间状语，不符合先行词 reason 表示的原因关系。",
+            "错误。whose 表示所属，后面需要接名词；这里从句已有完整的主谓结构。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "The hotel _____ we stayed during our trip was quiet and comfortable.",
+          "answerText": "where",
+          "explanation": "先行词 The hotel 表示地点；从句 we stayed 成分完整，缺少表示“住在哪里”的地点状语，因此填 where（相当于 at which）。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "I will never forget the year _____ my family moved to this city.",
+          "answerText": "when",
+          "explanation": "先行词 the year 表示时间；从句 my family moved to this city 成分完整，缺少时间状语，因此填 when（相当于 in which）。"
+        }
+      ]
+    },
+    {
+      "id": "relative-clauses-preposition-pronoun",
+      "category": "定语从句",
+      "title": "定语从句：介词 + 关系代词",
+      "description": "掌握介词前置时 which 和 whom 的选择，并保留固定搭配中的介词。",
+      "lesson": {
+        "rule": "当关系代词在从句中作介词宾语时，可以把介词放到关系代词前，构成“介词 + which（指物）/ whom（指人）”。这种结构较正式，关系代词不能用 that；介词前置时通常也不能省略关系代词。选择介词要根据从句中的动词或形容词搭配判断。",
+        "examples": [
+          { "sentence": "The person to whom I sent the email replied quickly.", "translation": "我发邮件的那个人很快回复了。（send an email to someone）" },
+          { "sentence": "This is the topic about which we talked in class.", "translation": "这就是我们在课堂上讨论的话题。（talk about something）" },
+          { "sentence": "The colleague with whom I worked has moved abroad.", "translation": "和我共事的那位同事搬到国外了。（work with someone）" }
+        ],
+        "tip": "先还原动词搭配：talk about、work with、depend on 等，再把介词放到 which 或 whom 前。指人用 whom，指物用 which。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "The teacher to _____ I sent my essay gave me some helpful advice.",
+          "options": ["A. who", "B. whom", "C. which", "D. that"],
+          "answer": 1,
+          "explanation": "send an essay to someone 中，关系代词是介词 to 的宾语。先行词 The teacher 指人，因此介词前置时用 whom。",
+          "optionExplanations": [
+            "错误。在正式的“介词 + 关系代词”结构中，介词后用宾格 whom，不用主格 who。",
+            "正确。先行词指人，且 whom 作介词 to 的宾语，结构为 to whom。",
+            "错误。which 用于指物，不能指代 The teacher。",
+            "错误。介词前置时关系代词不能用 that，应使用 whom。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "The issue about _____ they had a long discussion was finally resolved.",
+          "options": ["A. whom", "B. whose", "C. which", "D. that"],
+          "answer": 2,
+          "explanation": "固定搭配是 have a discussion about something。先行词 The issue 指物，因此把 about 前置后用 which，构成 about which。",
+          "optionExplanations": [
+            "错误。whom 指人，不用于指代 The issue。",
+            "错误。whose 表所属，不能作介词 about 的宾语来指代 issue。",
+            "正确。先行词指物，which 作 about 的宾语，构成 about which。",
+            "错误。介词前置时不能用 that；此处应使用 which。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "The friend with _____ I traveled to Beijing is a talented photographer.",
+          "options": ["A. which", "B. that", "C. whose", "D. whom"],
+          "answer": 3,
+          "explanation": "travel with someone 表示“和某人一起旅行”。先行词 The friend 指人，关系代词作介词 with 的宾语，因此使用 whom。",
+          "optionExplanations": [
+            "错误。which 指物，不能指代人 The friend。",
+            "错误。介词前置时不能用 that。",
+            "错误。whose 表所属，后面需要接名词；此处空格是介词 with 的宾语。",
+            "正确。先行词指人，且 whom 作介词 with 的宾语，构成 with whom。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "The company for _____ she works is based in Shanghai.",
+          "answerText": "which",
+          "explanation": "work for a company 表示“为一家公司工作”。先行词 The company 指物，for 前置后关系代词用 which，构成 for which。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "The person from _____ I got this information is a reliable source.",
+          "answerText": "whom",
+          "explanation": "get information from a person 表示“从某人那里得到信息”。先行词 The person 指人，from 前置后用宾格 whom，构成 from whom。"
+        }
+      ]
+    },
+    {
+      "id": "restrictive-vs-nonrestrictive-relative-clauses",
+      "category": "定语从句",
+      "title": "限制性与非限制性定语从句",
+      "description": "通过逗号判断从句是限定范围还是补充说明。",
+      "lesson": {
+        "rule": "限制性定语从句用于说明先行词具体指谁或什么，通常不加逗号；非限制性定语从句用逗号隔开，只补充说明，去掉后主句仍指向明确。非限制性定语从句不能用 that，关系代词作宾语时通常也不能省略。",
+        "examples": [
+          { "sentence": "Students who arrive early can review in the library.", "translation": "早到的学生可以在图书馆复习。（限制性：说明哪些学生）" },
+          { "sentence": "My aunt, who lives in Nanjing, is visiting us this weekend.", "translation": "我姑妈这周末要来看我们，她住在南京。（非限制性：补充信息）" }
+        ],
+        "tip": "先看逗号：逗号内通常是补充信息；没有逗号时，从句可能在限定先行词范围。非限制性从句中不要选 that。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "My aunt, _____ works as a nurse, often gives me helpful advice.",
+          "options": ["A. that", "B. who", "C. whose", "D. whom"],
+          "answer": 1,
+          "explanation": "两个逗号表明 works as a nurse 是非限制性定语从句，用来补充介绍姑妈。从句缺少主语，先行词指人，因此用 who。",
+          "optionExplanations": [
+            "错误。that 不能用于非限制性定语从句。",
+            "正确。who 指人，并在从句中作主语；逗号标明这是补充说明。",
+            "错误。whose 表所属，后面应接名词；空格后直接接谓语 works。",
+            "错误。whom 指人但在从句中作宾语；此处空格是 works 的主语。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "The students _____ arrive before 8 a.m. can use the study room.",
+          "options": ["A. that", "B. whom", "C. whose", "D. which"],
+          "answer": 0,
+          "explanation": "从句没有用逗号隔开，作用是限定哪些学生可以使用自习室。先行词指人，从句缺主语；that 可以用于此类限制性定语从句。",
+          "optionExplanations": [
+            "正确。that 指代 students，并在限制性定语从句中作主语。",
+            "错误。whom 作宾语；此处从句缺少主语，而不是宾语。",
+            "错误。whose 表所属，后面需要接名词；空格后直接接动词 arrive。",
+            "错误。which 通常指物，不能指代 students。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "Mr. Chen, _____ car was damaged in the storm, took the bus to work.",
+          "options": ["A. who", "B. whom", "C. whose", "D. that"],
+          "answer": 2,
+          "explanation": "逗号表明从句是在补充说明 Mr. Chen；从句中 car 属于 Mr. Chen，需要用 whose 表示所属，构成 whose car。",
+          "optionExplanations": [
+            "错误。who 指人并作主语，但这里空格后已有主语 car，需要表达所属关系。",
+            "错误。whom 指人并作宾语，不能限定后面的名词 car。",
+            "正确。whose 表示“他的”，后接名词 car；逗号标出补充说明。",
+            "错误。that 不能引导非限制性定语从句。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "My neighbor, _____ has a small garden, grows fresh vegetables every summer.",
+          "answerText": "who",
+          "explanation": "逗号表明从句是补充介绍 neighbor 的信息。先行词指人，且从句缺少主语，因此填 who。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "The bicycle, _____ I bought online, arrived yesterday.",
+          "answerText": "which",
+          "explanation": "逗号表明从句是补充说明这辆自行车。先行词指物，I bought _____ online 缺少宾语，因此填 which。非限制性定语从句中的关系代词作宾语时通常不能省略。"
+        }
+      ]
+    },
+    {
+      "id": "non-finite-ing-forms",
+      "category": "非谓语动词",
+      "title": "非谓语动词：动词-ing 形式",
+      "description": "辨认动词-ing 作主语、宾语和状语时的句法作用。",
+      "lesson": {
+        "rule": "动词-ing 形式可以作主语、宾语或状语。作主语时通常把动作当作一件事；作宾语时常跟在 enjoy、avoid、finish、suggest 等动词后；作状语时，动词-ing 的逻辑主语通常与主句主语一致，常表示伴随或原因。作主语或宾语的动名词与作状语的现在分词形式相同，但句中作用不同。",
+        "examples": [
+          { "sentence": "Reading before bed helps me relax.", "translation": "睡前阅读能帮助我放松。（Reading 作主语）" },
+          { "sentence": "She enjoys listening to podcasts.", "translation": "她喜欢听播客。（listening 作 enjoys 的宾语）" },
+          { "sentence": "Walking through the park, Ben saw a familiar face.", "translation": "Ben 走过公园时看见了一张熟悉的脸。（Walking 作状语，逻辑主语是 Ben）" }
+        ],
+        "tip": "先找句子的谓语，再看 -ing 形式的位置和作用：句首作一件事的名称常作主语；跟在特定动词后作其内容常作宾语；修饰主句动作时可能作状语。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "_____ regularly can improve your sleep and reduce stress.",
+          "options": ["A. Exercise", "B. Exercising", "C. Exercised", "D. To exercising"],
+          "answer": 1,
+          "explanation": "空格处需要充当句子的主语，表示“规律锻炼这件事”。动词-ing 形式可作主语，因此用 Exercising。",
+          "optionExplanations": [
+            "错误。Exercise 是动词原形，不能直接作这里的主语。",
+            "正确。Exercising 作主语，表示“规律锻炼”这一活动。",
+            "错误。Exercised 是过去式或过去分词，不能在这里作主语表达该动作。",
+            "错误。to 后若接动词，应使用动词原形；To exercising 结构不正确。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "Our teacher suggested _____ a vocabulary notebook to review new words.",
+          "options": ["A. keep", "B. to keep", "C. keeping", "D. kept"],
+          "answer": 2,
+          "explanation": "suggest 后接动词-ing 形式作宾语，表示“建议做某事”，因此用 keeping。",
+          "optionExplanations": [
+            "错误。suggest 后不能直接接动词原形 keep 表示“建议做某事”。",
+            "错误。suggest 后通常不接 to do 结构表达这个意思，应使用动词-ing。",
+            "正确。suggest doing something 是常见结构，keeping 作 suggested 的宾语。",
+            "错误。kept 是过去式或过去分词，不能直接作 suggest 的宾语。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "_____ the instructions carefully, Mia avoided a common mistake.",
+          "options": ["A. Read", "B. Reading", "C. To read", "D. Reads"],
+          "answer": 1,
+          "explanation": "空格处的短语修饰主句动作 avoided，说明 Mia 是通过仔细阅读说明来避免错误。动词-ing 短语作状语，且逻辑主语与主句主语 Mia 一致。",
+          "optionExplanations": [
+            "错误。Read 作动词原形时不能直接构成修饰主句的状语短语。",
+            "正确。Reading the instructions carefully 作状语，逻辑主语是主句中的 Mia。",
+            "错误。To read 可构成不定式，但此处要表达伴随或方式，动词-ing 短语更符合句意和本题考点。",
+            "错误。Reads 是第三人称单数谓语形式，不能直接放在句首充当这里的状语。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "_____ (read) aloud every day helps you notice pronunciation mistakes.",
+          "answerText": "Reading",
+          "explanation": "空格处的动作整体作句子主语，表示“每天大声朗读这件事”，因此使用动词-ing 形式 Reading。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "_____ (walk) home, I ran into an old classmate.",
+          "answerText": "Walking",
+          "explanation": "动词-ing 短语作状语，说明主句动作发生时的伴随情境；其逻辑主语是主句主语 I，因此填 Walking。"
+        }
+      ]
+    },
+    {
+      "id": "past-participle-attributes-adverbials",
+      "category": "非谓语动词",
+      "title": "非谓语动词：动词-ed 形式",
+      "description": "判断过去分词修饰名词或表示主语所处的被动、完成状态。",
+      "lesson": {
+        "rule": "过去分词可放在名词前或名词后作定语，通常表示被动或完成，如 a damaged window、the meal prepared by the students。过去分词短语也可作状语，表示原因、时间或状态；其逻辑主语通常是主句主语，且与过去分词之间含有被动或完成关系。",
+        "examples": [
+          { "sentence": "The meal prepared by the students was served at noon.", "translation": "学生们准备的饭菜中午上桌了。（prepared by the students 作定语，修饰 meal）" },
+          { "sentence": "Startled by the sudden noise, the horse ran back to the stable.", "translation": "马被突然的声响吓了一跳，跑回了马厩。（Startled 作状语，逻辑主语是 the horse）" }
+        ],
+        "tip": "先找过去分词修饰谁：名词前后常作定语；句首短语作状语时，检查它的逻辑主语是否与主句主语一致。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "The paintings _____ by local artists will be displayed in the town hall.",
+          "options": ["A. painting", "B. painted", "C. paint", "D. to paint"],
+          "answer": 1,
+          "explanation": "空格处修饰 The paintings，表示“由当地艺术家绘制的画”，paintings 与 paint 之间是被动关系，因此用过去分词 painted 作定语。",
+          "optionExplanations": [
+            "错误。painting 是现在分词，通常表示主动或正在进行；画是被绘制的，不是自己绘画。",
+            "正确。painted 是过去分词，表示画被当地艺术家绘制，作后置定语修饰 paintings。",
+            "错误。paint 是动词原形，不能直接在此处修饰名词。",
+            "错误。to paint 是不定式，常表示目的或将要发生的动作，不符合“已经绘制的画”这一含义。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "_____ by the loud thunder, the horse ran back to the stable.",
+          "options": ["A. Startling", "B. Startled", "C. Startle", "D. To startle"],
+          "answer": 1,
+          "explanation": "马是被雷声惊吓的对象，主句主语 the horse 与 startle 之间是被动关系。过去分词短语 Startled by the loud thunder 作状语。",
+          "optionExplanations": [
+            "错误。Startling 通常表示“令人害怕的”，若作状语会变成马主动使别人害怕，逻辑不符。",
+            "正确。Startled 表示马受到惊吓，逻辑主语与主句主语 the horse 一致。",
+            "错误。Startle 是动词原形，不能直接充当这里的状语。",
+            "错误。To startle 表目的或将来动作，不符合“马被雷声吓到后跑回去”的语境。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "The seats _____ near the stage offer the best view of the performance.",
+          "options": ["A. located", "B. locating", "C. locate", "D. to locate"],
+          "answer": 0,
+          "explanation": "空格处修饰 seats，表示“位于舞台附近的座位”。座位是被安置在某处的，因此用过去分词 located 作定语。",
+          "optionExplanations": [
+            "正确。located near the stage 表示“位于舞台附近的”，是过去分词短语作后置定语。",
+            "错误。locating 表示主动进行，但 seats 不是主动定位某物的一方。",
+            "错误。locate 是谓语动词原形，不能直接用来修饰 seats。",
+            "错误。to locate 常表示目的或将要做的动作，不表示座位已处于某个位置。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "The meal _____ (prepare) by the students was served at noon.",
+          "answerText": "prepared",
+          "explanation": "空格处修饰 meal；饭菜是被学生们准备的，二者是被动关系，因此用 prepare 的过去分词 prepared 作定语。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "_____ (invite) to speak at the event, Leo thanked the organizers.",
+          "answerText": "Invited",
+          "explanation": "Leo 是被邀请来发言的人，过去分词短语作状语，表示 Leo 受到邀请后向组织者道谢。逻辑主语与主句主语 Leo 一致，填 Invited。"
+        }
+      ]
+    },
+    {
+      "id": "infinitive-purpose-object",
+      "category": "非谓语动词",
+      "title": "非谓语动词：动词不定式 to do",
+      "description": "掌握 to do 表示目的，以及常见动词后接不定式作宾语的用法。",
+      "lesson": {
+        "rule": "动词不定式 to do 可放在句中表示目的，回答“为了做什么”；也可跟在 want、hope、agree、decide、promise 等动词后作宾语。作宾语时要记住常见动词搭配，不能只按中文意思判断形式。",
+        "examples": [
+          { "sentence": "We stopped at the visitor center to get a map.", "translation": "我们在游客中心停下来拿一张地图。（to get 表目的）" },
+          { "sentence": "Max hopes to study engineering at university.", "translation": "Max 希望在大学学习工程学。（to study 作 hopes 的宾语）" }
+        ],
+        "tip": "若 to do 说明主句动作的目的，通常译为“为了……”；若紧跟在特定动词后，检查该动词是否要求接不定式。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "Nora opened the school website _____ the date of the science fair.",
+          "options": ["A. checking", "B. check", "C. to check", "D. checked"],
+          "answer": 2,
+          "explanation": "Nora 打开学校网站的目的是查看科学展的日期，空格处表示目的，用不定式 to check。",
+          "optionExplanations": [
+            "错误。checking 不能自然地表达此处“打开网站是为了查看日期”的目的。",
+            "错误。动词原形 check 不能直接作目的状语。",
+            "正确。to check the date 表示打开网站的目的，即“为了查看日期”。",
+            "错误。checked 是过去式或过去分词，不能在此处表达目的。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "The volunteers agreed _____ the new students around the campus.",
+          "options": ["A. showing", "B. to show", "C. show", "D. showed"],
+          "answer": 1,
+          "explanation": "agree 后接动词不定式作宾语，结构为 agree to do something，因此用 to show。",
+          "optionExplanations": [
+            "错误。agree 通常不接动词-ing 形式表达“同意做某事”。",
+            "正确。agree to do something 是固定搭配，to show 作 agreed 的宾语。",
+            "错误。agree 后不能直接接动词原形 show。",
+            "错误。showed 是过去式，不能直接作 agree 的宾语。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "The teacher reminded us _____ our names at the top of the answer sheet.",
+          "options": ["A. write", "B. writing", "C. wrote", "D. to write"],
+          "answer": 3,
+          "explanation": "remind someone to do something 表示“提醒某人做某事”，因此用不定式 to write 作宾语补足语。",
+          "optionExplanations": [
+            "错误。remind someone 后不能直接接动词原形 write 表示提醒某人去做。",
+            "错误。这里不是 remind someone doing 的结构；要表达提醒某人做某事，应使用 to do。",
+            "错误。wrote 是过去式，不能放在 someone 后作宾语补足语。",
+            "正确。remind us to write 是“提醒我们填写”的常见结构。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "I went to the office _____ (collect) an application form.",
+          "answerText": "to collect",
+          "explanation": "去办公室的目的是领取申请表，空格处作目的状语，因此用不定式 to collect。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "They agreed _____ (join) the neighborhood clean-up project.",
+          "answerText": "to join",
+          "explanation": "agree 后接不定式作宾语，结构为 agree to do something，因此填 to join。"
+        }
+      ]
+    },
+    {
+      "id": "non-finite-forms-review",
+      "category": "非谓语动词",
+      "title": "非谓语动词综合辨析",
+      "description": "结合动词搭配、句子成分和主动被动关系判断非谓语形式。",
+      "lesson": {
+        "rule": "判断非谓语动词时，先看它在句中作什么成分，再看动作与逻辑主语的关系：介词后常接动词-ing；不定式可作目的状语或跟在特定动词后作宾语；现在分词常表示主动或进行；过去分词常表示被动或完成。非谓语动词本身不能单独充当句子的谓语。",
+        "examples": [
+          { "sentence": "Before entering the lab, put on your safety glasses.", "translation": "进入实验室前，请戴好护目镜。（介词 before 后用 entering）" },
+          { "sentence": "The students practicing outside the gym are waiting for their teacher.", "translation": "在体育馆外练习的学生正在等老师。（practicing 表主动，作定语）" },
+          { "sentence": "The package sent by express mail arrived this morning.", "translation": "用快递寄来的包裹今天早上到了。（sent 表被动，作定语）" }
+        ],
+        "tip": "按三步判断：找句子谓语；看空格作主语、宾语、定语还是状语；最后判断主动、被动或目的关系。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "Before _____ the laboratory, all visitors must put on safety glasses.",
+          "options": ["A. enter", "B. entering", "C. to enter", "D. entered"],
+          "answer": 1,
+          "explanation": "before 在这里是介词，后接名词或动词-ing 形式作宾语，因此用 entering。",
+          "optionExplanations": [
+            "错误。介词 before 后不能直接接动词原形 enter。",
+            "正确。entering 是动名词，作介词 before 的宾语。",
+            "错误。介词 before 后不接 to do 形式作宾语。",
+            "错误。entered 是过去式或过去分词，不能作介词 before 的宾语。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "The students _____ outside the gym are waiting for their teacher.",
+          "options": ["A. practiced", "B. to practice", "C. practicing", "D. practice"],
+          "answer": 2,
+          "explanation": "空格处修饰 students，表示学生们正在体育馆外练习。students 主动进行 practice，因此用现在分词 practicing 作定语。",
+          "optionExplanations": [
+            "错误。practiced 是过去式或过去分词，表示被练习等含义时与 students 的主动关系不符。",
+            "错误。to practice 通常表示目的或将来要做的动作，不符合此处“正在练习的学生”。",
+            "正确。practicing 表示学生主动进行且正在进行的动作，作后置定语修饰 students。",
+            "错误。practice 是谓语动词原形，不能直接作这里的后置定语。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "The package _____ by express mail arrived this morning.",
+          "options": ["A. sending", "B. sent", "C. to send", "D. sends"],
+          "answer": 1,
+          "explanation": "包裹是被寄出的，package 与 send 之间是被动关系；过去分词 sent 作后置定语修饰 package。",
+          "optionExplanations": [
+            "错误。sending 表示主动进行，包裹不是寄送动作的执行者。",
+            "正确。sent 是 send 的过去分词，表示包裹被寄出，作定语修饰 package。",
+            "错误。to send 通常表示目的或将来要做的动作，不表示已经寄出的包裹。",
+            "错误。sends 是谓语动词形式，不能直接在主句谓语 arrived 前充当定语。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "The photos _____ (take) during the science trip are on the class website.",
+          "answerText": "taken",
+          "explanation": "照片是被拍摄的，take 与 photos 之间是被动关系，因此用 take 的过去分词 taken 作定语修饰 photos。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "The guide reminded us _____ (stay) on the marked path.",
+          "answerText": "to stay",
+          "explanation": "remind someone to do something 表示“提醒某人做某事”，空格处是不定式作宾语补足语，因此填 to stay。"
+        }
+      ]
+    },
+    {
+      "id": "noun-clause-object-clause",
+      "category": "名词性从句",
+      "title": "宾语从句：语序与时态呼应",
+      "description": "掌握宾语从句使用陈述语序，并根据主句时态选择从句时态。",
+      "lesson": {
+        "rule": "宾语从句要用陈述语序，即“连接词 + 主语 + 谓语”，不能使用疑问句倒装。主句谓语是过去时，从句通常也要相应后移时态；但从句表示客观真理或仍然成立的事实时，仍可用一般现在时。",
+        "examples": [
+          {
+            "sentence": "Could you tell me where the nearest bus stop is?",
+            "translation": "你能告诉我最近的公交站在哪里吗？（从句用陈述语序）"
+          },
+          {
+            "sentence": "Lily said that she would call me the next day.",
+            "translation": "Lily 说她第二天会给我打电话。（主句过去时，will 呼应为 would）"
+          },
+          {
+            "sentence": "The teacher said that water boils at 100°C.",
+            "translation": "老师说水在 100°C 沸腾。（客观事实仍用一般现在时）"
+          }
+        ],
+        "tip": "先把从句还原成陈述句语序；再看主句时态和从句表达的时间。主句过去时通常引起时态呼应，但客观真理不必后移。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "Could you tell me where _____?",
+          "options": [
+            "A. is the nearest bus stop",
+            "B. the nearest bus stop is",
+            "C. does the nearest bus stop",
+            "D. the nearest bus stop does"
+          ],
+          "answer": 1,
+          "explanation": "where 引导宾语从句，从句要用陈述语序“主语 + 谓语”，因此应为 the nearest bus stop is。",
+          "optionExplanations": [
+            "错误。这是疑问句倒装语序 is the nearest bus stop，不能直接用于宾语从句。",
+            "正确。从句使用陈述语序 the nearest bus stop is。",
+            "错误。宾语从句不用疑问句倒装；而且 does 后还缺少实义动词。",
+            "错误。does 不能单独在这里作谓语，句子缺少实义动词。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "Ella said that she _____ the invitation the following day.",
+          "options": [
+            "A. accepts",
+            "B. will accept",
+            "C. would accept",
+            "D. accepted"
+          ],
+          "answer": 2,
+          "explanation": "主句 said 是过去时，the following day 表示从过去看将来的时间，宾语从句中通常把 will accept 后移为 would accept。",
+          "optionExplanations": [
+            "错误。accepts 是一般现在时，不能表达从过去看第二天将接受邀请。",
+            "错误。will accept 是直接从现在看将来；这里主句 said 为过去时，通常需要时态呼应。",
+            "正确。would accept 是过去将来时，表示她在当时说第二天会接受邀请。",
+            "错误。accepted 表示过去已经接受，与 the following day 所表示的过去将来时间不符。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "I wonder whether _____ to the library with us after school.",
+          "options": [
+            "A. will he come",
+            "B. he will come",
+            "C. does he come",
+            "D. he comes"
+          ],
+          "answer": 1,
+          "explanation": "whether 引导宾语从句，使用陈述语序；after school 指将来的放学后，因此用 he will come。",
+          "optionExplanations": [
+            "错误。will he come 是直接疑问句的倒装语序，不能用于 whether 引导的宾语从句。",
+            "正确。从句采用陈述语序 he will come，且 will 表示将来。",
+            "错误。does he come 是疑问句语序，而且一般现在时不符合此处的将来语境。",
+            "错误。虽然语序正确，但一般现在时 he comes 不适合表达这里的将来安排。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "I didn't know where the keys _____ (be).",
+          "answerText": "were",
+          "explanation": "主句 didn't know 是过去时，宾语从句通常进行时态呼应，be 从 is/are 后移为 were。这里的 where the keys were 仍使用陈述语序。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "Ben promised that he _____ (call) us after the meeting.",
+          "answerText": "would call",
+          "explanation": "主句 promised 是过去时，after the meeting 表示从过去承诺时点看将要发生的事，因此用过去将来时 would call。"
+        }
+      ]
+    },
+    {
+      "id": "noun-clause-subject-it",
+      "category": "名词性从句",
+      "title": "主语从句：it 作形式主语",
+      "description": "用 it 暂代较长的主语从句，使句子表达更自然。",
+      "lesson": {
+        "rule": "that、whether 或疑问词引导的从句可以作主语。主语从句较长时，常把 it 放在句首作形式主语，将真正的主语从句放在句末。常见结构有“It + be + 形容词/名词 + that 从句”和“It + 被动语态 + that 从句”。",
+        "examples": [
+          {
+            "sentence": "It is clear that the road is closed.",
+            "translation": "很明显，这条路封闭了。（it 作形式主语，that 从句是真正主语）"
+          },
+          {
+            "sentence": "It was announced that the sports center would reopen on Monday.",
+            "translation": "据宣布，体育中心将在周一重新开放。（it 作形式主语）"
+          }
+        ],
+        "tip": "如果句首的 that 从句太长，常改用 it 作形式主语，并把真正的主语从句放到句末。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "_____ is widely believed that regular exercise can improve sleep.",
+          "options": [
+            "A. What",
+            "B. That",
+            "C. It",
+            "D. Which"
+          ],
+          "answer": 2,
+          "explanation": "句子采用“It + 被动语态 + that 从句”结构，it 是形式主语，that 从句是真正的主语。",
+          "optionExplanations": [
+            "错误。what 引导的从句本身需要在句中充当成分，不能与后面的 is widely believed that 组成此结构。",
+            "错误。That 作句首主语时，后面不应再接形式主语结构 is widely believed that。",
+            "正确。It is widely believed that... 是常见的形式主语结构。",
+            "错误。which 通常需要明确的选择范围或先行词，不用于此处作形式主语。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "_____ was announced that the sports center would reopen on Monday.",
+          "options": [
+            "A. It",
+            "B. What",
+            "C. Which",
+            "D. Whether"
+          ],
+          "answer": 0,
+          "explanation": "这里使用“It + 被动语态 + that 从句”结构，句首需要形式主语 It。",
+          "optionExplanations": [
+            "正确。It was announced that... 是固定句型，It 作形式主语。",
+            "错误。What 引导的主语从句若作真正主语，后面不能再用 was announced that 这一形式主语结构。",
+            "错误。Which 需要有选择范围或先行词，不能作此处的形式主语。",
+            "错误。Whether 可引导主语从句，但不能放在 It was announced that... 结构中的形式主语位置。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "_____ seems that no seats are left for the evening show.",
+          "options": [
+            "A. There",
+            "B. It",
+            "C. What",
+            "D. That"
+          ],
+          "answer": 1,
+          "explanation": "表示“似乎……”时，可以用“It seems that + 从句”。句首 it 作形式主语，that 从句是真正主语。",
+          "optionExplanations": [
+            "错误。There seems 后通常接名词短语，如 There seems to be...；不能接 seems that 从句。",
+            "正确。It seems that... 是表达“似乎……”的常见结构。",
+            "错误。What 引导的从句不能放在 seems that 前构成该形式主语结构。",
+            "错误。That 若作真正主语，不能再与 seems that... 的结构重复。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "_____ is clear that every student needs enough time to prepare.",
+          "answerText": "It",
+          "explanation": "这是“It + be + 形容词 + that 从句”结构，it 作形式主语，that 从句是真正主语，因此填 It。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "_____ was reported that the old bridge would reopen the following week.",
+          "answerText": "It",
+          "explanation": "句子使用“It + 被动语态 + that 从句”结构，空格处填形式主语 It。"
+        }
+      ]
+    },
+    {
+      "id": "predicative-vs-appositive-that-clauses",
+      "category": "名词性从句",
+      "title": "表语从句与同位语从句：that 的区别",
+      "description": "看 that 从句的位置与作用，区分它是在补足主语还是解释抽象名词。",
+      "lesson": {
+        "rule": "表语从句通常放在 be、seem 等系动词后，补充说明主语的内容，如“The problem is that...”。同位语从句通常跟在 fact、news、idea、claim 等抽象名词后，解释该名词的具体内容，如“the news that...”。这两种从句中的 that 都是连接词，不在从句中充当主语或宾语。",
+        "examples": [
+          {
+            "sentence": "The problem is that we don't have enough time.",
+            "translation": "问题是我们没有足够的时间。（that 从句作表语）"
+          },
+          {
+            "sentence": "The news that our team had reached the final made everyone excited.",
+            "translation": "我们队进入决赛的消息让大家很兴奋。（that 从句解释 news 的内容）"
+          }
+        ],
+        "tip": "看 that 前面的结构：紧跟系动词、补足主语意思的是表语从句；紧跟 fact、news、idea 等名词、解释其内容的是同位语从句。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "The main problem is _____ we don't have enough time to finish the project.",
+          "options": [
+            "A. what",
+            "B. that",
+            "C. which",
+            "D. where"
+          ],
+          "answer": 1,
+          "explanation": "空格位于系动词 is 后，that 从句补充说明主语 The main problem 的具体内容，因此是表语从句。",
+          "optionExplanations": [
+            "错误。what 在从句中需要充当某种成分；这里 we don't have enough time to finish the project 已有完整主谓宾结构，不缺成分。",
+            "正确。that 引导表语从句，说明问题的具体内容。",
+            "错误。which 通常在从句中指代并充当成分；这里从句结构完整，不需要关系代词。",
+            "错误。where 表地点，不能连接句中要表达的“问题内容”。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "The possibility _____ the match might be canceled because of rain worried the players.",
+          "options": [
+            "A. which",
+            "B. where",
+            "C. that",
+            "D. what"
+          ],
+          "answer": 2,
+          "explanation": "that 从句跟在抽象名词 possibility 后，说明“可能发生什么”，因此是同位语从句。that 在从句中不充当句子成分；从句本身结构完整。",
+          "optionExplanations": [
+            "错误。which 作关系代词时要在从句中充当成分；这里从句 might be canceled because of rain 不缺主语或宾语。",
+            "错误。where 表地点，从句说明的是一种可能性内容，不是地点。",
+            "正确。that 引导同位语从句，解释 possibility 的具体内容。",
+            "错误。what 通常在从句中充当主语、宾语或表语；这里从句不缺这些成分。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "The question is _____ we should hold the meeting online or in person.",
+          "options": [
+            "A. that",
+            "B. what",
+            "C. which",
+            "D. whether"
+          ],
+          "answer": 3,
+          "explanation": "空格位于系动词 is 后，后面是需要选择的两种方式，并由 or 连接，因此表语从句用 whether，表示“是否”。",
+          "optionExplanations": [
+            "错误。that 只连接从句，不能表达“是否”，也无法自然引出 or 提供的两种选择。",
+            "错误。what 表示“什么”，但此处询问的是在线还是线下两种可能。",
+            "错误。which 通常要在从句中充当成分；这里从句结构完整，且需要表达“是否”。",
+            "正确。whether 引导表语从句，并与后面的 or in person 构成两种选择。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "My suggestion is _____ we invite both classes to the discussion.",
+          "answerText": "that",
+          "explanation": "that 从句位于系动词 is 后，说明 suggestion 的具体内容，作表语从句；that 在从句中不充当成分，因此填 that。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "The claim _____ the new policy will reduce costs needs further study.",
+          "answerText": "that",
+          "explanation": "that 从句跟在抽象名词 claim 后，解释“主张的内容”，作同位语从句；从句 will reduce costs 结构完整，that 不充当从句成分，因此填 that。"
+        }
+      ]
+    },
+    {
+      "id": "subjunctive-if-conditions",
+      "category": "虚拟语气",
+      "title": "虚拟语气：if 条件句",
+      "description": "根据条件与事实的距离，判断 if 从句和主句的动词形式。",
+      "lesson": {
+        "rule": "与现在事实相反时，if 从句用一般过去时（be 通常用 were），主句用 would/could/might + 动词原形。与过去事实相反时，if 从句用 had + 过去分词，主句用 would/could/might have + 过去分词。if 从句通常不直接使用 would。",
+        "examples": [
+          {
+            "sentence": "If I were more confident, I would speak up in class.",
+            "translation": "如果我更自信，我就会在课堂上主动发言。（与现在事实相反）"
+          },
+          {
+            "sentence": "If we had checked the map, we would have found the museum sooner.",
+            "translation": "如果我们当时查了地图，就会更早找到博物馆。（与过去事实相反）"
+          }
+        ],
+        "tip": "先判断条件说的是现在还是过去，再配对时态：现在反事实用“过去式 + would do”，过去反事实用“had done + would have done”。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "If I _____ closer to campus, I would walk to school every day.",
+          "options": [
+            "A. live",
+            "B. lived",
+            "C. had lived",
+            "D. will live"
+          ],
+          "answer": 1,
+          "explanation": "主句 would walk 表明这是与现在事实相反的假设；if 从句用一般过去时 lived。",
+          "optionExplanations": [
+            "错误。live 是一般现在时，用于真实或可能发生的条件；与主句 would walk 的反事实语气不匹配。",
+            "正确。与现在事实相反时，if 从句用一般过去时，故用 lived。",
+            "错误。had lived 用于与过去事实相反的条件句；此处表达的是现在住得不够近。",
+            "错误。if 条件从句通常不用 will 表示这种虚拟条件；此处应使用过去式。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "If the team had practiced more, it _____ the final match.",
+          "options": [
+            "A. would win",
+            "B. won",
+            "C. would have won",
+            "D. had won"
+          ],
+          "answer": 2,
+          "explanation": "if 从句 had practiced 表示与过去事实相反，主句应使用 would have + 过去分词，表示本来可能赢得决赛。",
+          "optionExplanations": [
+            "错误。would win 表示对现在或将来的假设结果，不与 had practiced 的过去反事实条件对应。",
+            "错误。won 是一般过去时，没有表达“本来会赢但实际未赢”的虚拟结果。",
+            "正确。与过去事实相反的主句结构为 would have + 过去分词，win 的过去分词是 won。",
+            "错误。had won 是过去完成时，不能单独表达虚拟条件句主句的结果。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "If the weather _____ worse tomorrow, the outdoor concert would be moved indoors.",
+          "options": [
+            "A. gets",
+            "B. will get",
+            "C. got",
+            "D. had got"
+          ],
+          "answer": 2,
+          "explanation": "主句 would be moved 表明这是对将来可能性较小情况的假设。此类虚拟条件句的 if 从句用一般过去时 got。",
+          "optionExplanations": [
+            "错误。gets 通常用于真实、较可能发生的条件；此处主句使用 would，表达较远的假设。",
+            "错误。if 条件从句通常不直接用 will；这里的虚拟条件应使用一般过去时。",
+            "正确。对将来可能性较小的情况作假设时，if 从句可用一般过去时，故用 got。",
+            "错误。had got 表示与过去事实相反的条件，与 tomorrow 指向的将来假设不符。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "If I _____ (know) his phone number, I would call him.",
+          "answerText": "knew",
+          "explanation": "主句 would call 表示与现在事实相反的假设；if 从句用一般过去时，know 的过去式是 knew。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "If we _____ (check) the map, we would have found the museum sooner.",
+          "answerText": "had checked",
+          "explanation": "主句 would have found 表示与过去事实相反的结果；if 从句应使用过去完成时 had + 过去分词，填 had checked。"
+        }
+      ]
+    },
+    {
+      "id": "subject-verb-agreement-proximity",
+      "category": "主谓一致",
+      "title": "主谓一致：就近原则与就远原则",
+      "description": "识别谓语应与最近的名词一致，还是与真正的主语中心词一致。",
+      "lesson": {
+        "rule": "就近原则常见于 either...or、neither...nor、not only...but also 以及 there be 结构，谓语通常与最近的主语一致。就远原则常见于主语后接 as well as、together with、along with 等短语，谓语仍与前面的主语中心词一致。",
+        "examples": [
+          {
+            "sentence": "Neither the coach nor the players are ready to leave.",
+            "translation": "教练和队员都还没准备好离开。（neither...nor 用就近原则，靠近谓语的是复数 players）"
+          },
+          {
+            "sentence": "Maya, together with her classmates, is attending the workshop.",
+            "translation": "Maya 和她的同学们正在参加工作坊。（together with 不改变主语中心词 Maya 的单数形式）"
+          }
+        ],
+        "tip": "先找主语和连接结构：either/or、neither/nor 通常看离谓语最近的主语；as well as、together with 等短语不改变前面主语的单复数。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "Neither the coach nor the players _____ ready to leave.",
+          "options": [
+            "A. is",
+            "B. are",
+            "C. was",
+            "D. has been"
+          ],
+          "answer": 1,
+          "explanation": "neither...nor 连接两个主语时通常采用就近原则。离谓语最近的是复数名词 players，因此用 are。",
+          "optionExplanations": [
+            "错误。is 是单数形式，与最近的主语 players 不一致。",
+            "正确。就近主语 players 是复数，谓语用 are。",
+            "错误。was 是单数过去式，既与复数主语不一致，也与句中当前语境不符。",
+            "错误。has been 是单数形式，与最近的复数主语 players 不一致。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "Maya, as well as her classmates, _____ invited to the science workshop.",
+          "options": [
+            "A. were",
+            "B. are",
+            "C. was",
+            "D. have been"
+          ],
+          "answer": 2,
+          "explanation": "as well as her classmates 是补充信息，不改变主语中心词 Maya。Maya 是单数，且句意指已经收到邀请，因此用 was invited。",
+          "optionExplanations": [
+            "错误。were 是复数形式；as well as 后的 classmates 不会让谓语与复数一致。",
+            "错误。are 是现在时，与句中已被邀请的语境不符；主语中心词 Maya 也是单数。",
+            "正确。谓语与主语中心词 Maya 保持一致，用单数过去式 was。",
+            "错误。have been 是复数形式；谓语应与单数主语 Maya 一致。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "Either the volunteers or the manager _____ the classroom keys.",
+          "options": [
+            "A. have",
+            "B. are",
+            "C. has",
+            "D. were"
+          ],
+          "answer": 2,
+          "explanation": "either...or 连接两个主语时采用就近原则。离谓语最近的是单数主语 the manager，因此用 has。",
+          "optionExplanations": [
+            "错误。have 是复数形式，与最近的单数主语 manager 不一致。",
+            "错误。are 是复数 be 动词，且本句需要与 keys 搭配的实义动词“有”。",
+            "正确。就近主语 the manager 是单数，表示“有钥匙”用 has。",
+            "错误。were 是复数过去式，与最近的单数主语 manager 不一致，时态也不合语境。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "Not only the teacher but also the students _____ (be) responsible for setting up the room.",
+          "answerText": "are",
+          "explanation": "not only...but also 连接两个主语时采用就近原则。离谓语最近的是复数主语 the students，因此 be 用 are。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "The captain, together with two players, _____ (be) meeting the reporter.",
+          "answerText": "is",
+          "explanation": "together with two players 是插入的补充信息，谓语采用就远原则，与主语中心词 The captain 保持一致。captain 是单数，因此填 is。"
+        }
+      ]
+    },
+    {
+      "id": "adverbial-clauses-time-condition-concession",
+      "category": "状语从句",
+      "title": "状语从句：时间、条件与让步",
+      "description": "辨认时间、条件和让步关系，并掌握从句中的时态形式。",
+      "lesson": {
+        "rule": "时间状语从句常由 when、before、after、as soon as 等引导；条件状语从句常由 if、unless、as long as 等引导；让步状语从句常由 although、though、even though 等引导。谈论将来时，时间和条件状语从句通常用一般现在时表示将来；although/though 不与 but 在同一个让步复合句中同时使用。",
+        "examples": [
+          {
+            "sentence": "I'll call you when I get to the station.",
+            "translation": "我到车站时会给你打电话。（时间从句用一般现在时表将来）"
+          },
+          {
+            "sentence": "You can borrow my notes as long as you return them tomorrow.",
+            "translation": "只要你明天还笔记，就可以借走。（条件从句用一般现在时表将来）"
+          },
+          {
+            "sentence": "Although it was raining, the match continued.",
+            "translation": "虽然当时下着雨，比赛仍继续了。（让步关系）"
+          }
+        ],
+        "tip": "先辨认连词表达的关系；如果时间或条件从句谈将来，通常不要在从句里直接填 will。让步从句用 although/though 时，主句不要再加 but。"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "stem": "We'll visit the museum as soon as it _____ next Saturday.",
+          "options": [
+            "A. will open",
+            "B. opens",
+            "C. opened",
+            "D. is opening"
+          ],
+          "answer": 1,
+          "explanation": "as soon as 引导时间状语从句。虽然句子谈的是下周六的将来，但时间从句通常用一般现在时表示将来，因此用 opens。",
+          "optionExplanations": [
+            "错误。时间状语从句谈将来时通常不用 will，应用一般现在时。",
+            "正确。opens 是一般现在时，在 as soon as 时间从句中表示将来；主语 it 为第三人称单数。",
+            "错误。opened 是过去式，与 next Saturday 的将来时间不符。",
+            "错误。is opening 通常表示正在发生或已安排的进行动作；本题考查时间从句中一般现在时表将来的规则。"
+          ]
+        },
+        {
+          "id": "q2",
+          "stem": "You won't be able to join the trip unless you _____ the form by Friday.",
+          "options": [
+            "A. submit",
+            "B. will submit",
+            "C. submitted",
+            "D. submitting"
+          ],
+          "answer": 0,
+          "explanation": "unless 引导条件状语从句，表示“除非”。主句谈将来时，条件从句通常用一般现在时表将来，因此用 submit。",
+          "optionExplanations": [
+            "正确。条件从句中用一般现在时表示将来；主语 you 搭配动词原形 submit。",
+            "错误。条件状语从句谈将来时通常不直接使用 will。",
+            "错误。submitted 是过去式，与主句的将来语境不符。",
+            "错误。submitting 是动词-ing 形式，不能单独作此处条件从句的谓语。"
+          ]
+        },
+        {
+          "id": "q3",
+          "stem": "_____ the task was difficult, the whole team completed it on time.",
+          "options": [
+            "A. Because",
+            "B. Unless",
+            "C. Although",
+            "D. So"
+          ],
+          "answer": 2,
+          "explanation": "句意是“任务虽然困难，但整个团队还是按时完成了”，前后构成让步关系，因此用 Although 引导让步状语从句。",
+          "optionExplanations": [
+            "错误。Because 表示原因，逻辑上会变成“因为任务困难，所以团队按时完成”，与句意不符。",
+            "错误。Unless 表示“除非”，表达条件，不符合前后让步关系。",
+            "正确。Although 表示“虽然”，引导让步状语从句，与主句形成转折关系。",
+            "错误。So 表示结果或承接，不能在这里引导让步状语从句。"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "fill",
+          "stem": "I'll send you a message when I _____ (get) to the station.",
+          "answerText": "get",
+          "explanation": "when 引导时间状语从句，主句用 will 表示将来时，从句仍用一般现在时表示将来。主语 I 搭配动词原形 get。"
+        },
+        {
+          "id": "q5",
+          "type": "fill",
+          "stem": "You may use the study room as long as you _____ (leave) it clean.",
+          "answerText": "leave",
+          "explanation": "as long as 引导条件状语从句，表示“只要”。主句表达许可，条件从句仍用一般现在时；主语 you 搭配动词原形 leave。"
+        }
+      ]
+    }
+  ]
+}

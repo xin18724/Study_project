@@ -1,0 +1,42 @@
+[
+  {
+    "id": "small-changes-big-impact",
+    "title": "Small Changes, Big Impact",
+    "difficulty": "高考中等",
+    "paragraphs": [
+      { "segments": [{ "text": "When Maya joined her school's environmental club, she expected to spend weekends cleaning the local river. Instead, the first meeting was spent looking at a pile of lunch boxes. " }, { "text": "The club had noticed that students threw away hundreds of plastic containers every week.", "translation": "社团注意到，学生们每周都会扔掉数百个塑料餐盒。" }, { "text": " They wanted to find a practical way to reduce the waste." }] },
+      { "segments": [{ "text": "Their first idea was to ask everyone to bring a reusable box from home. However, many students forgot theirs, and some worried that washing a box after lunch would take too much time. Maya suggested a different plan: the school could lend out clean containers and collect them at the end of the day. The club tested the idea in one classroom for two weeks. Students paid a small deposit, which they got back when they returned a container." }] },
+      { "segments": [{ "text": "The trial was not perfect. A few containers went missing, and the volunteers had to spend time washing them. Still, the amount of plastic rubbish from that classroom fell by nearly half. More importantly, students began discussing other ways to cut waste, such as sharing books and using both sides of paper. The school later expanded the lending system to the whole building." }] },
+      { "segments": [{ "text": "Maya learned that changing a habit does not always require a big speech or a strict rule. " }, { "text": "A solution is more likely to work when it fits into people's daily lives.", "translation": "当一种解决方案融入人们的日常生活时，它更有可能奏效。" }, { "text": " " }, { "text": "Small steps can also help people see that their choices matter, making them willing to try the next one.", "translation": "小小的行动也能让人们看到自己的选择很重要，从而愿意尝试下一步。" }] }
+    ],
+    "questions": [
+      {
+        "type": "细节理解题",
+        "stem": "Why did the environmental club first discuss lunch boxes?",
+        "options": ["They wanted to raise money by selling boxes.", "They noticed a large amount of plastic waste from them.", "Students had asked for a longer lunch break.", "The river cleanup had been cancelled."],
+        "answer": 1,
+        "explanation": "The club began with a problem they could observe at school: disposable lunch containers were creating a lot of waste.",
+        "evidence": "The club had noticed that students threw away hundreds of plastic containers every week.",
+        "optionExplanations": ["无中生有：文章没有提到售卖饭盒或筹款。", "正确：对应每周产生大量塑料饭盒垃圾这一发现。", "无中生有：午休时长与讨论无关。", "偷换话题：文章开头提到周末清理河流只是 Maya 的预期，并未说活动取消。"]
+      },
+      {
+        "type": "细节理解题",
+        "stem": "What made the club's lending plan more practical for students?",
+        "options": ["Students could borrow a clean container and get their deposit back.", "Students no longer had to eat lunch at school.", "The school gave every student a new box to keep.", "Volunteers delivered lunch to each classroom."],
+        "answer": 0,
+        "explanation": "The school would lend clean containers, and returning one meant students got their small deposit back. This addressed the problems of forgetting a box and not wanting to wash it.",
+        "evidence": "The school could lend out clean containers and collect them at the end of the day. Students paid a small deposit, which they got back when they returned a container.",
+        "optionExplanations": ["正确：借用和退还押金让学生更容易参与，也减少了自带和清洗的麻烦。", "无中生有：文章没有说学生不在学校吃饭。", "偷换概念：饭盒是借用后归还，不是发给学生永久保留。", "无中生有：没有志愿者送餐的安排。"]
+      },
+      {
+        "type": "主旨大意题",
+        "stem": "What is the main lesson Maya learned?",
+        "options": ["Rules are the only way to change people's habits.", "Environmental projects should begin with a large campaign.", "A solution that fits daily life can encourage lasting change.", "Students should focus on one problem and ignore the rest."],
+        "answer": 2,
+        "explanation": "Maya concludes that practical solutions fit people's routines, and small successes can motivate them to make further changes.",
+        "evidence": "A solution is more likely to work when it fits into people's daily lives. Small steps can also help people see that their choices matter, making them willing to try the next one.",
+        "optionExplanations": ["与原文相反：Maya 认为不一定需要严格规定。", "无中生有：文章强调小步骤，并未要求大型宣传活动。", "正确：概括了方案贴近日常生活、小行动带来后续改变的观点。", "偷换概念：文章举出减少纸张等后续行动，鼓励继续改善。"]
+      }
+    ]
+  }
+]
