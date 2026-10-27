@@ -8,6 +8,7 @@ import { createClient } from "@/lib/supabase/client";
 export default function LoginPage() {
   const router = useRouter();
   const [mode, setMode] = useState<"login" | "signup">("login");
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
@@ -16,15 +17,26 @@ export default function LoginPage() {
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (mode === "signup" && !username.trim()) {
+      setError("请输入用户名。");
+      return;
+    }
     setBusy(true); setMessage(""); setError("");
     const supabase = createClient();
     const result = mode === "login"
       ? await supabase.auth.signInWithPassword({ email, password })
-      : await supabase.auth.signUp({ email, password, options: { emailRedirectTo: `${window.location.origin}/` } });
+      : await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          data: { username: username.trim() },
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=/`,
+        },
+      });
     setBusy(false);
     if (result.error) { setError(result.error.message); return; }
     if (mode === "signup" && !result.data.session) {
-      setMessage("注册成功，请查看邮箱并点击确认链接，然后返回登录。");
+      setMessage("注册成功，请查看邮箱并点击确认链接完成登录。");
       return;
     }
     router.replace("/");
@@ -39,6 +51,7 @@ export default function LoginPage() {
       <p>登录后，你的单词学习进度会保存到云端。</p>
       <div className="auth-mode-tabs"><button type="button" className={mode === "login" ? "selected" : ""} onClick={() => { setMode("login"); setError(""); setMessage(""); }}>登录</button><button type="button" className={mode === "signup" ? "selected" : ""} onClick={() => { setMode("signup"); setError(""); setMessage(""); }}>注册</button></div>
       <form className="auth-form" onSubmit={submit}>
+        {mode === "signup" && <label>用户名<input type="text" autoComplete="nickname" minLength={2} maxLength={30} required value={username} onChange={(event) => setUsername(event.target.value)} placeholder="设置一个昵称" /></label>}
         <label>邮箱<input type="email" autoComplete="email" required value={email} onChange={(event) => setEmail(event.target.value)} placeholder="name@example.com" /></label>
         <label>密码<input type="password" autoComplete={mode === "login" ? "current-password" : "new-password"} minLength={6} required value={password} onChange={(event) => setPassword(event.target.value)} placeholder="至少 6 位" /></label>
         {error && <p className="auth-feedback auth-error" role="alert">{error}</p>}
