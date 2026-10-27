@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import SpeakButton from "@/components/SpeakButton";
+import { createClient } from "@/lib/supabase/client";
+import { deleteCloudDailyRecord, migrateLocalDailyRecords, migrateLocalProgress, readCloudLearningData, writeCloudDailyRecord, writeCloudProgress } from "@/components/vocabulary/cloudProgress";
 import {
   addLocalDays,
   dailyQueueStorageKey,
@@ -14,6 +16,7 @@ import {
   saveDailyResponse,
   wordList,
   wordStatusStorageKey,
+  type DailyRecord,
   type ProgressMap,
   type Word,
   type WordProgress,
@@ -114,8 +117,13 @@ export default function MemorySession({ amount }: { amount: number }) {
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [sessionTotal, setSessionTotal] = useState(amount);
   const [ready, setReady] = useState(false);
+  const [userId, setUserId] = useState<string | null>(null);
+  const [cloudError, setCloudError] = useState("");
 
   useEffect(() => {
+    let cancelled = false;
+    setReady(false);
+    async function prepareSession() {
     const date = getLocalDateKey();
     let loadedProgress: ProgressMap = {};
     try {
@@ -123,13 +131,15 @@ export default function MemorySession({ amount }: { amount: number }) {
       if (stored) loadedProgress = normalizeProgressMap(JSON.parse(stored));
     } catch { /* Continue with default progress if browser storage is unavailable. */ }
 
-    setUnknownCounts(readUnknownCounts(date));
+    let loadedUnknownCounts = readUnknownCounts(date);
+    let loadedDailyRecord: DailyRecord = {};
     const seenToday = new Set<string>();
     try {
       const rawRecord = window.localStorage.getItem(dailyRecordStorageKey(date));
       if (rawRecord) {
         const parsed: unknown = JSON.parse(rawRecord);
         if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+          loadedDailyRecord = parsed as DailyRecord;
           Object.entries(parsed).forEach(([id, response]) => {
             if (response === "mastered") seenToday.add(id);
           });
@@ -137,7 +147,37 @@ export default function MemorySession({ amount }: { amount: number }) {
       }
     } catch { /* Ignore malformed daily history. */ }
 
+    let activeUserId: string | null = null;
+    try {
+      const supabase = createClient();
+      const { data: { user } } = await supabase.auth.getUser();
+      activeUserId = user?.id ?? null;
+      if (activeUserId) {
+        const cloud = await readCloudLearningData(activeUserId);
+        if (cloud.progressRows > 0) loadedProgress = { ...loadedProgress, ...cloud.progress };
+        if (Object.keys(loadedProgress).length) await migrateLocalProgress(activeUserId, loadedProgress);
+        const cloudToday = cloud.dailyRecords[date] ?? {};
+        loadedDailyRecord = { ...loadedDailyRecord, ...cloudToday };
+        for (const [key, value] of Object.entries(cloud.unknownCounts)) {
+          const prefix = `${date}:`;
+          if (key.startsWith(prefix)) loadedUnknownCounts[key.slice(prefix.length)] = value;
+        }
+        await migrateLocalDailyRecords(activeUserId, date, loadedDailyRecord, loadedUnknownCounts);
+        Object.entries(cloudToday).forEach(([id, response]) => { if (response === "mastered") seenToday.add(id); });
+      }
+    } catch {
+      if (activeUserId) setCloudError("暂时无法读取云端进度，请确认已在 Supabase 执行 supabase/schema.sql。");
+    }
+    if (cancelled) return;
+    setUserId(activeUserId);
+    if (activeUserId) setCloudError("");
+    setUnknownCounts(loadedUnknownCounts);
     setProgress(loadedProgress);
+    try {
+      window.localStorage.setItem(dailyRecordStorageKey(date), JSON.stringify(loadedDailyRecord));
+      persistProgress(loadedProgress);
+    } catch { /* Continue with in-memory progress if browser storage is unavailable. */ }
+
     const savedQueue = readSavedQueue(date);
     let todayWords: Word[];
     let todayTotal: number;
@@ -162,6 +202,9 @@ export default function MemorySession({ amount }: { amount: number }) {
     setSessionTotal(todayTotal);
     writeSavedQueue(date, amount, todayTotal, todayWords, todayHistory);
     setReady(true);
+    }
+    void prepareSession();
+    return () => { cancelled = true; };
   }, [amount]);
 
   useEffect(() => {
@@ -197,6 +240,10 @@ export default function MemorySession({ amount }: { amount: number }) {
     setQueue(nextQueue);
     setHistory(nextHistory);
     saveDailyResponse(current.id, "mastered", date);
+    if (userId) void Promise.all([
+      writeCloudProgress(userId, current.id, nextProgress),
+      writeCloudDailyRecord(userId, current.id, date, "mastered", unknownCounts[current.id] ?? 0),
+    ]).then(() => setCloudError("")).catch(() => setCloudError("云端同步失败，请检查 Supabase 表结构和网络连接。"));
     writeSavedQueue(date, amount, sessionTotal, nextQueue, nextHistory);
   };
 
@@ -244,6 +291,10 @@ export default function MemorySession({ amount }: { amount: number }) {
       persistProgress(nextProgressMap);
       saveDailyResponse(current.id, "review", date);
     }
+    if (userId) void Promise.all([
+      finalized ? writeCloudProgress(userId, current.id, nextProgressMap[current.id]) : Promise.resolve(),
+      writeCloudDailyRecord(userId, current.id, date, finalized ? "review" : null, nextCount),
+    ]).then(() => setCloudError("")).catch(() => setCloudError("云端同步失败，请检查 Supabase 表结构和网络连接。"));
     setQueue(nextQueue);
     setHistory(nextHistory);
     if (nextTotal !== sessionTotal) setSessionTotal(nextTotal);
@@ -269,6 +320,11 @@ export default function MemorySession({ amount }: { amount: number }) {
       if (targetEntry.previousProgress) nextProgress[target.id] = targetEntry.previousProgress;
       else delete nextProgress[target.id];
       removeDailyResponse(target.id, date);
+      if (userId) {
+        void writeCloudProgress(userId, target.id, nextProgress[target.id] ?? emptyWordProgress()).catch(() => setCloudError("云端同步失败，请检查 Supabase 表结构和网络连接。"));
+        if ((unknownCounts[target.id] ?? 0) > 0) void writeCloudDailyRecord(userId, target.id, date, (unknownCounts[target.id] ?? 0) >= 3 ? "review" : null, unknownCounts[target.id] ?? 0).catch(() => setCloudError("云端同步失败，请检查 Supabase 表结构和网络连接。"));
+        else void deleteCloudDailyRecord(userId, target.id, date).catch(() => setCloudError("云端同步失败，请检查 Supabase 表结构和网络连接。"));
+      }
       nextQueue = [applyProgress(target, nextProgress), ...queue.filter((word) => word.id !== target.id)];
     } else if (targetEntry.action === "unknown") {
       const decremented = Math.max(0, (unknownCounts[target.id] ?? 0) - 1);
@@ -278,6 +334,11 @@ export default function MemorySession({ amount }: { amount: number }) {
         removeDailyResponse(target.id, date);
         if (targetEntry.previousProgress) nextProgress[target.id] = targetEntry.previousProgress;
         else delete nextProgress[target.id];
+      }
+      if (userId) {
+        void writeCloudProgress(userId, target.id, nextProgress[target.id] ?? emptyWordProgress()).catch(() => setCloudError("云端同步失败，请检查 Supabase 表结构和网络连接。"));
+        if (decremented > 0) void writeCloudDailyRecord(userId, target.id, date, decremented >= 3 ? "review" : null, decremented).catch(() => setCloudError("云端同步失败，请检查 Supabase 表结构和网络连接。"));
+        else void deleteCloudDailyRecord(userId, target.id, date).catch(() => setCloudError("云端同步失败，请检查 Supabase 表结构和网络连接。"));
       }
       if (targetEntry.previousTotal !== undefined) nextTotal = targetEntry.previousTotal;
       nextQueue = [applyProgress(target, nextProgress), ...queue.filter((word) => word.id !== target.id && word.id !== targetEntry.replacementId)];
@@ -305,6 +366,7 @@ export default function MemorySession({ amount }: { amount: number }) {
     <header className="site-header"><a className="brand" href="/"><span className="brand-mark">J</span><span>Junior<span className="brand-light">Study</span></span></a><a className="back-link" href="/study">← 调整学习量</a></header>
     <div className="memory-meta"><div><span className="section-kicker">WORD MEMORY · TODAY</span><h1>高中必背3500词</h1></div><span className="today-amount">今日目标 <b>{ready ? sessionTotal : amount}</b> 词</span></div>
     <div className="session-progress"><span>{current ? "今日学习" : "今日完成"}</span><div className="progress-track"><i style={{ width: (queue.length ? ((sessionTotal - queue.length) / sessionTotal) * 100 : 100) + "%" }}/></div><span>{Math.min(sessionTotal - queue.length, sessionTotal)} / {sessionTotal}</span></div>
+    {cloudError && <p className="cloud-sync-error" role="status">{cloudError}</p>}
     <section className="memory-stage">{!ready ? <div className="memory-loading">正在准备今日词汇…</div> : current ? <WordCard word={current} canGoPrevious={history.length > 1} onPrevious={goPrevious} onRemember={remember} onReview={reviewLater} /> : <div className="session-complete"><span className="complete-spark">✦</span><span className="section-kicker">DAILY GOAL COMPLETE</span><h2>今日任务完成</h2><p>今天的学习量已经完成，继续保持这个节奏。</p><div className="complete-actions"><button className="previous-button" disabled={!history.length} onClick={goPrevious}>← 上一个</button><a className="primary-button home-button" href="/">返回首页 <span>→</span></a></div></div>}</section>
     {current && <div className="memory-footnote"><span>今日队列剩余 <b>{queue.length}</b> 词</span><span><i className="status-dot dot-review"/> 不认识未满三次会排到队尾</span></div>}
     <footer className="site-footer"><span>JUNIOR STUDY</span><span>高中词表 · {wordList.length} 个词条</span></footer>

@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createClient } from "@/lib/supabase/client";
+import { migrateLocalProgress, readCloudLearningData } from "@/components/vocabulary/cloudProgress";
 import {
   dailyRecordStorageKey,
   getLocalDateKey,
@@ -18,20 +20,46 @@ export default function StudyProgress() {
   const [today, setToday] = useState<DailyRecord>({});
   const [loaded, setLoaded] = useState(false);
   const [todayDate, setTodayDate] = useState("");
+  const [cloudError, setCloudError] = useState("");
 
   useEffect(() => {
+    let cancelled = false;
+    async function loadProgress() {
     const date = getLocalDateKey();
     setTodayDate(date);
+    let loadedProgress: ProgressMap = {};
+    let loadedToday: DailyRecord = {};
     try {
       const savedMastery = window.localStorage.getItem(wordStatusStorageKey);
       const savedToday = window.localStorage.getItem(dailyRecordStorageKey(date));
-      if (savedMastery) setProgress(normalizeProgressMap(JSON.parse(savedMastery)));
+      if (savedMastery) loadedProgress = normalizeProgressMap(JSON.parse(savedMastery));
       if (savedToday) {
         const parsed: unknown = JSON.parse(savedToday);
-        if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) setToday(parsed as DailyRecord);
+        if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) loadedToday = parsed as DailyRecord;
       }
     } catch { /* Show available local progress if saved data is malformed. */ }
+    try {
+      const { data: { user } } = await createClient().auth.getUser();
+      if (user) {
+        const cloud = await readCloudLearningData(user.id);
+        if (cloud.progressRows > 0) loadedProgress = { ...loadedProgress, ...cloud.progress };
+        if (Object.keys(loadedProgress).length) await migrateLocalProgress(user.id, loadedProgress);
+        loadedToday = { ...loadedToday, ...(cloud.dailyRecords[date] ?? {}) };
+      }
+    } catch {
+      setCloudError("暂时无法读取云端进度，请确认已在 Supabase 执行 supabase/schema.sql。");
+    }
+    if (cancelled) return;
+    setProgress(loadedProgress);
+    setToday(loadedToday);
+    try {
+      window.localStorage.setItem(wordStatusStorageKey, JSON.stringify(loadedProgress));
+      window.localStorage.setItem(dailyRecordStorageKey(date), JSON.stringify(loadedToday));
+    } catch { /* Cloud and in-memory data remain available if local storage is unavailable. */ }
     setLoaded(true);
+    }
+    void loadProgress();
+    return () => { cancelled = true; };
   }, []);
 
   const masteredCount = wordList.reduce((count, word) => count + (progress[word.id]?.masteryLevel === 3 ? 1 : 0), 0);
@@ -55,6 +83,7 @@ export default function StudyProgress() {
       <h1>学习进度</h1>
       <p>每天记住一些，离目标再近一点。</p>
     </section>
+    {cloudError && <p className="cloud-sync-error" role="status">{cloudError}</p>}
     <section className="progress-overview">
       <article className="progress-card progress-total">
         <div className="progress-card-heading"><span>总进度</span><span className="progress-percent">{loaded ? percentage.toFixed(1) : "0.0"}%</span></div>
