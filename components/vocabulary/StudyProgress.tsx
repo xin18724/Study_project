@@ -7,6 +7,8 @@ import {
   dailyRecordStorageKey,
   getLocalDateKey,
   normalizeProgressMap,
+  readCustomWords,
+  readReadingAddedWordIds,
   wordList,
   wordStatusStorageKey,
   type DailyRecord,
@@ -17,6 +19,7 @@ import {
 
 export default function StudyProgress() {
   const [progress, setProgress] = useState<ProgressMap>({});
+  const [studyWords, setStudyWords] = useState<Word[]>(wordList);
   const [today, setToday] = useState<DailyRecord>({});
   const [loaded, setLoaded] = useState(false);
   const [todayDate, setTodayDate] = useState("");
@@ -26,6 +29,8 @@ export default function StudyProgress() {
     let cancelled = false;
     async function loadProgress() {
     const date = getLocalDateKey();
+    const availableWords = [...wordList, ...readCustomWords()];
+    setStudyWords(availableWords);
     setTodayDate(date);
     let loadedProgress: ProgressMap = {};
     let loadedToday: DailyRecord = {};
@@ -49,6 +54,9 @@ export default function StudyProgress() {
     } catch {
       setCloudError("暂时无法读取云端进度，请确认已在 Supabase 执行 supabase/schema.sql。");
     }
+    for (const wordId of readReadingAddedWordIds()) {
+      loadedProgress[wordId] = { masteryLevel: 0, nextReviewDate: null, isMastered: false, isUnfamiliar: true };
+    }
     if (cancelled) return;
     setProgress(loadedProgress);
     setToday(loadedToday);
@@ -62,14 +70,14 @@ export default function StudyProgress() {
     return () => { cancelled = true; };
   }, []);
 
-  const masteredCount = wordList.reduce((count, word) => count + (progress[word.id]?.masteryLevel === 3 ? 1 : 0), 0);
-  const learningCount = wordList.reduce((count, word) => {
+  const masteredCount = studyWords.reduce((count, word) => count + (progress[word.id]?.masteryLevel === 3 ? 1 : 0), 0);
+  const learningCount = studyWords.reduce((count, word) => {
     const level = progress[word.id]?.masteryLevel;
     return count + (level === 1 || level === 2 ? 1 : 0);
   }, 0);
-  const remainingCount = wordList.length - masteredCount - learningCount;
-  const percentage = wordList.length ? (masteredCount / wordList.length) * 100 : 0;
-  const wordsById = new Map(wordList.map((word) => [word.id, word]));
+  const remainingCount = studyWords.length - masteredCount - learningCount;
+  const percentage = studyWords.length ? (masteredCount / studyWords.length) * 100 : 0;
+  const wordsById = new Map(studyWords.map((word) => [word.id, word]));
   const remembered = getTodayWords(today, wordsById, "mastered");
   const review = getTodayWords(today, wordsById, "review");
 
@@ -87,13 +95,13 @@ export default function StudyProgress() {
     <section className="progress-overview">
       <article className="progress-card progress-total">
         <div className="progress-card-heading"><span>总进度</span><span className="progress-percent">{loaded ? percentage.toFixed(1) : "0.0"}%</span></div>
-        <div className="progress-summary"><span>已掌握</span><strong>{loaded ? masteredCount : 0}</strong><span>词 / 共 {wordList.length} 词</span></div>
-        <div className="progress-track progress-track-large" role="progressbar" aria-valuenow={loaded ? masteredCount : 0} aria-valuemin={0} aria-valuemax={wordList.length}><i style={{ width: (loaded ? percentage : 0) + "%" }}/></div>
+        <div className="progress-summary"><span>已掌握</span><strong>{loaded ? masteredCount : 0}</strong><span>词 / 共 {studyWords.length} 词</span></div>
+        <div className="progress-track progress-track-large" role="progressbar" aria-valuenow={loaded ? masteredCount : 0} aria-valuemin={0} aria-valuemax={studyWords.length}><i style={{ width: (loaded ? percentage : 0) + "%" }}/></div>
       </article>
       <article className="progress-card progress-remaining">
         <span>剩余未记忆</span>
-        <strong>{loaded ? remainingCount : wordList.length}</strong>
-        <small>还有 {loaded ? remainingCount : wordList.length} 个词未掌握</small>
+        <strong>{loaded ? remainingCount : studyWords.length}</strong>
+        <small>还有 {loaded ? remainingCount : studyWords.length} 个词未掌握</small>
         <small>学习中 {loaded ? learningCount : 0} 词</small>
       </article>
     </section>
@@ -104,7 +112,7 @@ export default function StudyProgress() {
         <RecordGroup title="还不认识" count={review.length} words={review} tone="review"/>
       </div>
     </section>
-    <footer className="site-footer"><span>JUNIOR STUDY</span><span>已掌握 {loaded ? masteredCount : 0} / {wordList.length}</span></footer>
+    <footer className="site-footer"><span>JUNIOR STUDY</span><span>已掌握 {loaded ? masteredCount : 0} / {studyWords.length}</span></footer>
   </main>;
 }
 

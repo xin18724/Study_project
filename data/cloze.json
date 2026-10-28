@@ -1,0 +1,104 @@
+[
+  {
+    "id": "the-garden-next-door",
+    "title": "The Garden Next Door",
+    "difficulty": "高考中等",
+    "paragraphs": [
+      "When an empty lot appeared beside our apartment building, most people walked past it. Mrs. Lee, who lived on the first floor, had another idea. She suggested that neighbors turn the space into a small garden where everyone could __1__. At first, only three families joined her. They borrowed tools, cleared rubbish, and planted beans, tomatoes, and herbs.",
+      "The first weeks were not easy. The summer was unusually hot, and rain was __2__. Instead of giving up, the neighbors placed barrels under the roof pipes to collect water. Children helped carry it to the plants, while adults made a simple schedule so that no row was forgotten. They also covered the soil with dry leaves. This kept water from disappearing too __3__ under the strong sun.",
+      "By August, green leaves filled the lot. A boy who had never touched a plant before proudly showed everyone his first tomato. Mrs. Lee taught him to save a few seeds for the next season. The garden produced enough food for the families, but its greatest result was not the vegetables. People who had once only nodded in the hallway now stopped to talk and help one another. Their relationships grew __4__, just like the plants they cared for. In autumn, the neighbors invited more families to join. They agreed that the garden belonged to everyone, and that looking after it together would make the space useful for years to __5__."
+    ],
+    "questions": [
+      {
+        "number": 1,
+        "stem": "She suggested that neighbors turn the space into a small garden where everyone could __1__.",
+        "options": ["compete", "share", "hide", "rest"],
+        "answer": 1,
+        "explanation": {
+          "contextLogic": "前文说邻居们想把空地改造成一个小花园，后文提到有几户人家一起加入，并共同种植蔬菜和香草。这里的空格表达花园面向大家、供邻居共同使用的意思。",
+          "optionAnalysis": "A compete 意为“竞争”，与邻居共同建设花园的语境不符；B share 意为“分享、共同使用”，符合后文 everyone 和邻居共同参与的线索；C hide 意为“藏起来”；D rest 意为“休息”，都不能体现花园的公共用途。因此选 B。",
+          "translation": "她建议邻居们把这块空地改造成一个小花园，让大家都能分享收获。"
+        }
+      },
+      {
+        "number": 2,
+        "stem": "The summer was unusually hot, and rain was __2__.",
+        "options": ["scarce", "pleasant", "noisy", "careless"],
+        "answer": 0,
+        "explanation": {
+          "contextLogic": "前文提到夏天异常炎热，后文马上说邻居们用桶接水，还安排轮流浇灌，说明雨水不足，植物需要节约用水。因此空格应表示“稀少、不充足”。",
+          "optionAnalysis": "A scarce 意为“稀少的”，可形容雨水不足；B pleasant 意为“令人愉快的”，不表示数量；C noisy 意为“吵闹的”，通常形容声音；D careless 意为“粗心的”，通常形容人或行为。结合后文的缺水应对措施，选 A。",
+          "translation": "那年夏天异常炎热，雨水也很稀少。"
+        }
+      },
+      {
+        "number": 3,
+        "stem": "This kept water from disappearing too __3__ under the strong sun.",
+        "options": ["quietly", "suddenly", "quickly", "politely"],
+        "answer": 2,
+        "explanation": {
+          "contextLogic": "前文说邻居用干树叶覆盖土壤，后文提到烈日。覆盖土壤的作用是减慢水分蒸发，所以这里表示水分不会“很快”消失，属于措施与效果之间的因果线索。",
+          "optionAnalysis": "A quietly 意为“安静地”，描述声音或动作；B suddenly 意为“突然地”，强调变化发生得意外；C quickly 意为“迅速地”，与水分在烈日下蒸发的情境吻合；D politely 意为“有礼貌地”，通常形容人的行为。因此选 C。",
+          "translation": "这样可以避免水分在烈日下过快蒸发。"
+        }
+      },
+      {
+        "number": 4,
+        "stem": "Their relationships grew __4__, just like the plants they cared for.",
+        "options": ["closer", "heavier", "wider", "younger"],
+        "answer": 0,
+        "explanation": {
+          "contextLogic": "空格前先说邻居以前在走廊里只是点头打招呼，接着说现在会停下来交谈、互相帮忙。前后形成变化对比，说明他们的关系变得更亲近。",
+          "optionAnalysis": "A closer 意为“更亲近的”，可形容人与人之间的关系，也与后文互相交谈、帮助相呼应；B heavier 意为“更重的”；C wider 意为“更宽的”；D younger 意为“更年轻的”，都不能描述邻里关系的变化。因此选 A。",
+          "translation": "他们的关系变得更加亲近，就像他们照料的植物一样不断成长。"
+        }
+      },
+      {
+        "number": 5,
+        "stem": "Looking after it together would make the space useful for years to __5__.",
+        "options": ["come", "arrive", "follow", "leave"],
+        "answer": 0,
+        "explanation": {
+          "contextLogic": "前文说邻居们邀请更多家庭加入，并计划一起照料花园；后文强调让花园在未来多年继续发挥作用。上下文表达的是长期规划。",
+          "optionAnalysis": "A come 与 years 构成固定表达 for years to come，意为“未来很多年”；B arrive 意为“到达”，不用于这个固定搭配；C follow 意为“跟随”，不能表达未来时间；D leave 意为“离开”，意思不合。因此选 A。",
+          "translation": "他们认为，只要大家一起照料，花园未来多年都能继续发挥作用。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "the-library-note",
+    "title": "The Library Note",
+    "difficulty": "高考中等",
+    "paragraphs": [
+      "When Sam began volunteering at the city library, he expected to spend most of his time putting books back on the shelves. One rainy Saturday, a young girl came in holding a piece of paper. She looked __1__ and kept glancing at the clock. Her note had become wet, and the title of a book she needed was hard to read. Sam did not hurry her. He listened __2__ while she explained that the book was for a school project about space.",
+      "The library had thousands of books, so finding the right one was not simple. Sam showed her how to use the computer catalogue. When the screen displayed several possible titles, he asked her to __3__ the words she could still read. Together they checked the shelves, but the first two books were not the one she wanted. At last, Sam found the title on a lower shelf near the science section. A look of __4__ replaced the worry on the girl's face.",
+      "Before leaving, she thanked Sam and promised to return the book on time. The next week, she came back with a friend who also needed help. Sam began to understand that library work was not only about books. Sometimes a patient conversation could make a visitor feel welcome and confident enough to ask questions. His small act had helped the girl finish her project, but it also reminded him that simple kindness can __5__ to someone having a difficult day."
+    ],
+    "questions": [
+      { "number": 1, "stem": "She looked __1__ and kept glancing at the clock.", "options": ["lost", "proud", "sleepy", "careless"], "answer": 0, "explanation": { "contextLogic": "后文说女孩不断看钟，纸条被雨淋湿，书名也难以辨认，说明她不知道该怎么办，显得迷茫。", "optionAnalysis": "A lost 可表示“迷茫、不知所措”，符合女孩遇到困难的状态；B proud“自豪的”没有依据；C sleepy“困倦的”与找书无关；D careless“粗心的”是在评价她的行为，文中没有责备她。因此选 A。", "translation": "她看起来有些不知所措，还不停地看钟。" } },
+      { "number": 2, "stem": "Sam did not hurry her. He listened __2__ while she explained...", "options": ["patiently", "secretly", "suddenly", "angrily"], "answer": 0, "explanation": { "contextLogic": "Sam 没有催促女孩，接着耐心听她解释需求。前后两个动作相互照应，体现他愿意给女孩时间说清楚。", "optionAnalysis": "A patiently“耐心地”与 did not hurry her 语义一致；B secretly“秘密地”修饰倾听不合情境；C suddenly“突然地”表示动作发生突然，不能说明倾听态度；D angrily“生气地”与没有催促她的语气相反。因此选 A。", "translation": "Sam 没有催她，而是耐心地听她解释。" } },
+      { "number": 3, "stem": "He asked her to __3__ the words she could still read.", "options": ["repeat", "hide", "borrow", "invent"], "answer": 0, "explanation": { "contextLogic": "纸条被雨淋湿，书名看不清；目录显示出几个可能的书名后，Sam 需要女孩把仍能辨认的词说出来，以便进一步核对。", "optionAnalysis": "A repeat“重复说出”能让 Sam 听清纸条上残留的词；B hide“藏起来”与找书相反；C borrow“借入”是找到书之后才发生的事；D invent“编造”会凭空增加信息，不利于确认书名。因此选 A。", "translation": "他请女孩把仍然看得清的词再说一遍。" } },
+      { "number": 4, "stem": "A look of __4__ replaced the worry on the girl's face.", "options": ["relief", "silence", "distance", "anger"], "answer": 0, "explanation": { "contextLogic": "前文说 Sam 最终在书架上找到了女孩要的书。找到书后，原先的担忧被另一种表情取代，情绪应从紧张转为放心。", "optionAnalysis": "A relief“宽慰、放心”常用于 a look of relief，符合问题解决后的情绪变化；B silence“沉默”不是表情所表达的情绪；C distance“距离”不能替代 worry；D anger“愤怒”与找到书后的情境不符。因此选 A。", "translation": "女孩脸上的担忧消失了，取而代之的是宽慰的神情。" } },
+      { "number": 5, "stem": "Simple kindness can __5__ to someone having a difficult day.", "options": ["matter", "arrive", "belong", "grow"], "answer": 0, "explanation": { "contextLogic": "文章总结 Sam 的帮助不仅让女孩完成项目，也让她感到受欢迎。这里进一步点出主题：对正经历困难的人来说，简单的善意也有价值。", "optionAnalysis": "A matter 可构成 matter to someone，表示“对某人很重要、有意义”；B arrive“到达”通常描述人或事物抵达；C belong“属于”需要表达归属关系；D grow“生长、增长”不能与 to someone 构成此处所需的意思。因此选 A。", "translation": "简单的善意对正在经历困难的人来说也可能很重要。" } }
+    ]
+  },
+  {
+    "id": "lunch-without-screens",
+    "title": "Lunch Without Screens",
+    "difficulty": "高考中等",
+    "paragraphs": [
+      "At Westbrook School, many students spent lunch looking at phones or eating without speaking. Teachers worried new students found it hard to make friends, so the school tried one phone-free lunch each week. Students kept phones in their bags during the meal. Some felt __1__ at first because they were not sure what to say.",
+      "To make the change easier, the school placed games and question cards on tables. The goal was not to punish students, but to __2__ conversation. At first, a few students gave short answers. Soon someone asked a follow-up question, and the conversation began to __3__. Students discovered interests they had never discussed online.",
+      "Mina, a new student, said lunch helped her __4__ that two classmates liked the same science fiction books. They began visiting the library together. The trial also revealed that some students needed to check messages about bus changes. The school allowed them to check their phones briefly at a nearby table when necessary.",
+      "After a month, most students supported keeping one screen-free lunch each week. They did not want to give up phones completely, but many enjoyed having time to notice the people around them. The school learned that building a better routine did not require a strict ban. Listening to students and making a small adjustment helped the new habit feel fair."
+    ],
+    "questions": [
+      { "number": 1, "stem": "Some students felt __1__ at first because they were not sure what to say.", "options": ["awkward", "delighted", "certain", "patient"], "answer": 0, "explanation": { "contextLogic": "前文描述学生平时各自看手机、很少交谈；突然要放下手机一起吃饭，他们一时不知道说什么，因此会感到不自在。", "optionAnalysis": "A awkward“局促的、不自在的”，符合不习惯面对面交谈的处境；B delighted“非常高兴的”与不知道说什么不对应；C certain“确定的”描述判断或信心；D patient“有耐心的”与社交尴尬无关。因此选 A。", "translation": "起初，有些学生觉得不太自在，因为他们不知道该说什么。" } },
+      { "number": 2, "stem": "The idea was not to punish students, but to __2__ conversation.", "options": ["encourage", "avoid", "record", "interrupt"], "answer": 0, "explanation": { "contextLogic": "前文说学校提供游戏和问题卡，后文也说明这些材料帮助学生交流。由 not ... but ... 可知，学校的目的不是惩罚，而是促进交谈。", "optionAnalysis": "A encourage“鼓励、促进”与游戏和问题卡的作用相符；B avoid“避免”与活动目的相反；C record“记录”不是提供卡片的目的；D interrupt“打断”会妨碍谈话。因此选 A。", "translation": "学校的目的不是惩罚学生，而是鼓励他们交谈。" } },
+      { "number": 3, "stem": "Someone would ask a follow-up question, and the conversation began to __3__.", "options": ["flow", "disappear", "wait", "break"], "answer": 0, "explanation": { "contextLogic": "学生起初回答简短，但有人继续追问后，交流逐渐顺畅，并发现彼此有共同兴趣。追问带来更多回应，说明谈话开始自然进行。", "optionAnalysis": "A flow 可用于 conversation，表示“谈话流畅地进行”；B disappear“消失”与学生继续交谈相反；C wait“等待”不能表达对话逐渐活跃；D break“打破、弄坏”不符合 conversation 的常见搭配。因此选 A。", "translation": "很快，有人开始追问，谈话也逐渐顺畅起来。" } },
+      { "number": 4, "stem": "The new lunch helped her __4__ that two classmates liked the same books.", "options": ["discover", "forget", "promise", "hide"], "answer": 0, "explanation": { "contextLogic": "Mina 是新转来的学生，午餐交流让她知道两位同学也喜欢同类科幻书；后文说他们后来一起去图书馆。这里表示她通过交谈发现共同兴趣。", "optionAnalysis": "A discover“发现”适合描述原本不知道、后来了解到的信息；B forget“忘记”与得知共同爱好相反；C promise“承诺”后面通常接要做的事；D hide“隐藏”不能表达认识到共同兴趣。因此选 A。", "translation": "这次新的午餐安排让她发现，两位同学也喜欢同类科幻书。" } },
+      { "number": 5, "stem": "Listening to students and making a small adjustment helped the new habit feel __5__.", "options": ["fair", "empty", "distant", "careless"], "answer": 0, "explanation": { "contextLogic": "学校发现有些学生需要查看公交变动信息，于是允许他们在必要时短暂使用手机。听取需求并调整规则后，学生大多支持每周一次无屏午餐，说明新安排显得合理、可接受。", "optionAnalysis": "A fair“公平的、合理的”，与学校照顾不同需求后形成的安排相符；B empty“空的”描述空间或内容；C distant“遥远的、疏远的”描述距离或关系；D careless“粗心的”描述人或行为，都无法说明规则是否合理。因此选 A。", "translation": "倾听学生并作出小幅调整，让这个新习惯显得更公平。" } }
+    ]
+  }
+]

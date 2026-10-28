@@ -1,7 +1,7 @@
 const categories = [
   { title: "阅读理解", description: "单篇精读，练习回到原文寻找依据。", href: "/reading/comprehension", status: "开始练习", active: true, icon: "▤" },
-  { title: "完形填空", description: "结合上下文，理解词义与篇章逻辑。", href: "#", status: "即将开发", active: false, icon: "✳" },
-  { title: "语法填空", description: "在语篇中运用语法知识。", href: "#", status: "即将开发", active: false, icon: "Aa" },
+  { title: "完形填空", description: "结合上下文，理解词义与篇章逻辑。", href: "/cloze", status: "开始练习", active: true, icon: "✳" },
+  { title: "语法填空", description: "在语篇中运用语法知识。", href: "/grammar-fill", status: "开始练习", active: true, icon: "Aa" },
 ];
 
 export default function ReadingPage() {

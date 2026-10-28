@@ -12,6 +12,9 @@ import {
   emptyWordProgress,
   getLocalDateKey,
   normalizeProgressMap,
+  readCustomWords,
+  readReadingAddedWordIds,
+  readingAddedWordIdsStorageKey,
   removeDailyResponse,
   saveDailyResponse,
   wordList,
@@ -51,9 +54,9 @@ function applyProgress(word: Word, progress: ProgressMap): Word {
   return { ...word, masteryLevel: state.masteryLevel, nextReviewDate: state.nextReviewDate };
 }
 
-function selectEligibleWords(progress: ProgressMap, amount: number, today: string, excludedIds: Set<string> = new Set()) {
-  const seenSpellings = new Set(wordList.filter((word) => excludedIds.has(word.id)).map((word) => word.spelling.trim().toLocaleLowerCase()));
-  const pool = wordList.filter((word) => {
+function selectEligibleWords(words: Word[], progress: ProgressMap, amount: number, today: string, excludedIds: Set<string> = new Set()) {
+  const seenSpellings = new Set(words.filter((word) => excludedIds.has(word.id)).map((word) => word.spelling.trim().toLocaleLowerCase()));
+  const pool = words.filter((word) => {
     const spelling = word.spelling.trim().toLocaleLowerCase();
     if (excludedIds.has(word.id) || seenSpellings.has(spelling)) return false;
     const state = wordProgress(progress, word.id);
@@ -114,6 +117,7 @@ export default function MemorySession({ amount }: { amount: number }) {
   const [progress, setProgress] = useState<ProgressMap>({});
   const [unknownCounts, setUnknownCounts] = useState<UnknownCounts>({});
   const [queue, setQueue] = useState<Word[]>([]);
+  const [studyWords, setStudyWords] = useState<Word[]>(wordList);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [sessionTotal, setSessionTotal] = useState(amount);
   const [ready, setReady] = useState(false);
@@ -125,6 +129,8 @@ export default function MemorySession({ amount }: { amount: number }) {
     setReady(false);
     async function prepareSession() {
     const date = getLocalDateKey();
+    const availableWords = [...wordList, ...readCustomWords()];
+    setStudyWords(availableWords);
     let loadedProgress: ProgressMap = {};
     try {
       const stored = window.localStorage.getItem(wordStatusStorageKey);
@@ -168,6 +174,9 @@ export default function MemorySession({ amount }: { amount: number }) {
     } catch {
       if (activeUserId) setCloudError("暂时无法读取云端进度，请确认已在 Supabase 执行 supabase/schema.sql。");
     }
+    for (const wordId of readReadingAddedWordIds()) {
+      loadedProgress[wordId] = { masteryLevel: 0, nextReviewDate: null, isMastered: false, isUnfamiliar: true };
+    }
     if (cancelled) return;
     setUserId(activeUserId);
     if (activeUserId) setCloudError("");
@@ -184,16 +193,16 @@ export default function MemorySession({ amount }: { amount: number }) {
     let todayHistory: HistoryEntry[];
     if (savedQueue && savedQueue.amount === amount) {
       todayWords = savedQueue.wordIds
-        .map((id) => wordList.find((word) => word.id === id))
+        .map((id) => availableWords.find((word) => word.id === id))
         .filter((word): word is Word => word !== undefined && !wordProgress(loadedProgress, word.id).isMastered)
         .map((word) => applyProgress(word, loadedProgress));
       todayTotal = savedQueue.total;
       todayHistory = Array.isArray(savedQueue.history)
-        ? savedQueue.history.filter((entry) => entry && typeof entry.wordId === "string" && wordList.some((word) => word.id === entry.wordId))
+        ? savedQueue.history.filter((entry) => entry && typeof entry.wordId === "string" && availableWords.some((word) => word.id === entry.wordId))
         : [];
       if (!todayHistory.length && todayWords[0]) todayHistory = [{ wordId: todayWords[0].id, action: null }];
     } else {
-      todayWords = selectEligibleWords(loadedProgress, amount, date, seenToday);
+      todayWords = selectEligibleWords(availableWords, loadedProgress, amount, date, seenToday);
       todayTotal = todayWords.length;
       todayHistory = todayWords[0] ? [{ wordId: todayWords[0].id, action: null }] : [];
     }
@@ -237,6 +246,10 @@ export default function MemorySession({ amount }: { amount: number }) {
 
     setProgress(nextProgressMap);
     persistProgress(nextProgressMap);
+    try {
+      const readingAddedIds = readReadingAddedWordIds().filter((id) => id !== current.id);
+      window.localStorage.setItem(readingAddedWordIdsStorageKey, JSON.stringify(readingAddedIds));
+    } catch { /* Keep the current session progress if storage is unavailable. */ }
     setQueue(nextQueue);
     setHistory(nextHistory);
     saveDailyResponse(current.id, "mastered", date);
@@ -262,7 +275,7 @@ export default function MemorySession({ amount }: { amount: number }) {
     let replacementId: string | undefined;
     if (finalized) {
       const reservedIds = new Set([...history.map((entry) => entry.wordId), ...queue.map((word) => word.id)]);
-      const replacement = selectEligibleWords(nextProgressMap, 1, date, reservedIds)[0];
+      const replacement = selectEligibleWords(studyWords, nextProgressMap, 1, date, reservedIds)[0];
       if (replacement) {
         nextQueue = [...nextQueue, replacement];
         replacementId = replacement.id;
@@ -307,7 +320,7 @@ export default function MemorySession({ amount }: { amount: number }) {
 
     const targetIndex = fromCompletion ? history.length - 1 : history.length - 2;
     const targetEntry = history[targetIndex];
-    const target = wordList.find((word) => word.id === targetEntry.wordId);
+    const target = studyWords.find((word) => word.id === targetEntry.wordId);
     if (!target) return;
 
     const date = getLocalDateKey();
@@ -369,7 +382,7 @@ export default function MemorySession({ amount }: { amount: number }) {
     {cloudError && <p className="cloud-sync-error" role="status">{cloudError}</p>}
     <section className="memory-stage">{!ready ? <div className="memory-loading">正在准备今日词汇…</div> : current ? <WordCard word={current} canGoPrevious={history.length > 1} onPrevious={goPrevious} onRemember={remember} onReview={reviewLater} /> : <div className="session-complete"><span className="complete-spark">✦</span><span className="section-kicker">DAILY GOAL COMPLETE</span><h2>今日任务完成</h2><p>今天的学习量已经完成，继续保持这个节奏。</p><div className="complete-actions"><button className="previous-button" disabled={!history.length} onClick={goPrevious}>← 上一个</button><a className="primary-button home-button" href="/">返回首页 <span>→</span></a></div></div>}</section>
     {current && <div className="memory-footnote"><span>今日队列剩余 <b>{queue.length}</b> 词</span><span><i className="status-dot dot-review"/> 不认识未满三次会排到队尾</span></div>}
-    <footer className="site-footer"><span>JUNIOR STUDY</span><span>高中词表 · {wordList.length} 个词条</span></footer>
+    <footer className="site-footer"><span>JUNIOR STUDY</span><span>高中词表 · {studyWords.length} 个词条</span></footer>
   </main>;
 }
 

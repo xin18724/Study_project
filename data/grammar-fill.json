@@ -1,0 +1,121 @@
+[
+  {
+    "id": "small-changes-grammar",
+    "title": "Small Changes, Big Impact",
+    "difficulty": "高考中等",
+    "sourceArticleId": "small-changes-big-impact",
+    "paragraphs": [
+      "When Maya joined her school's environmental club, she expected to spend weekends cleaning the local river. Instead, the first meeting was spent looking at __1__ pile of lunch boxes. The club had noticed __2__ students threw away hundreds of plastic containers every week. They __3__(want) to find a practical way to reduce the waste.",
+      "Their first idea was to ask everyone to bring a __4__(reuse) box from home. However, many students forgot theirs, and some worried that washing a box after lunch would take too much time. Maya suggested a different plan: the school could lend out clean containers and collect them at the end of the day. The club __5__(test) the idea in one classroom for two weeks. Students paid a small deposit, which they got back when they returned a container."
+    ],
+    "gaps": [
+      {
+        "number": 1,
+        "answer": "a",
+        "explanation": {
+          "context": "Maya 看到的是“一堆午餐盒”，pile 是单数可数名词。",
+          "grammar": "pile 以辅音音素开头，前面用不定冠词 a。",
+          "reason": "此空无提示词，考查冠词，答案为 a。"
+        }
+      },
+      {
+        "number": 2,
+        "answer": "that",
+        "explanation": {
+          "context": "俱乐部注意到后面所述的情况，即学生每周丢弃大量塑料容器。",
+          "grammar": "that 引导 noticed 后的宾语从句，在从句中不作成分。",
+          "reason": "此空无提示词，考查连接宾语从句的连词 that。"
+        }
+      },
+      {
+        "number": 3,
+        "prompt": "want",
+        "answer": "wanted",
+        "explanation": {
+          "context": "前文描述俱乐部发现问题，后文说明他们想找到解决方法，整段叙述的是过去发生的事情。",
+          "grammar": "want 作谓语，应用一般过去时 wanted。",
+          "reason": "此空给出动词提示词 (want)，考查时态变化。"
+        }
+      },
+      {
+        "number": 4,
+        "prompt": "reuse",
+        "answer": "reusable",
+        "explanation": {
+          "context": "学生需要从家里带一种可以反复使用的盒子。",
+          "grammar": "空格修饰名词 box，需要形容词；reuse 加后缀 -able 构成 reusable，意为“可重复使用的”。",
+          "reason": "此空给出提示词 (reuse)，考查词性转换。"
+        }
+      },
+      {
+        "number": 5,
+        "prompt": "test",
+        "answer": "tested",
+        "explanation": {
+          "context": "俱乐部把这个计划在一个班级试行了两周，后文继续描述押金和归还容器的做法。",
+          "grammar": "此处需要谓语动词，且事件发生在过去，test 变为 tested。",
+          "reason": "此空给出动词提示词 (test)，考查一般过去时。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "repaired-library-grammar",
+    "title": "A Library Built One Book at a Time",
+    "difficulty": "高考中等",
+    "sourceArticleId": "the-repaired-library",
+    "paragraphs": [
+      "After college, Mei __1__(return) to her mountain village and found the community room filled with unused chairs. Younger children had few chances to read outside school, so she wondered __2__ the room could become a library. She began with a simple request: each family could give __3__ book it no longer needed.",
+      "The first collection was small, and some books were too __4__(difficulty) for young readers. A retired teacher sorted the books __5__ age and topic. A carpenter repaired the shelves, while children made signs. Mei kept a borrowing notebook so families could track each book. By giving each person a clear role, she turned the project from her private idea into a shared effort."
+    ],
+    "gaps": [
+      {
+        "number": 1,
+        "prompt": "return",
+        "answer": "returned",
+        "explanation": {
+          "context": "Mei 大学毕业后回到家乡，接着发现社区活动室闲置，故事按过去的经历展开。",
+          "grammar": "return 是谓语动词，应用一般过去时 returned。",
+          "reason": "正文已标出提示词 (return)，此空考查时态变化。"
+        }
+      },
+      {
+        "number": 2,
+        "answer": "whether",
+        "explanation": {
+          "context": "Mei 不确定活动室能不能改成图书馆，这是一个“是否”的问题。",
+          "grammar": "whether 引导 wondered 后的宾语从句，表示“是否”。",
+          "reason": "此空无提示词，考查连词 whether，答案是一个词。"
+        }
+      },
+      {
+        "number": 3,
+        "answer": "a",
+        "explanation": {
+          "context": "Mei 邀请每个家庭捐一本不再需要的书，book 是单数可数名词。",
+          "grammar": "book 以辅音音素开头，前面用不定冠词 a。",
+          "reason": "此空无提示词，考查冠词，答案为 a。"
+        }
+      },
+      {
+        "number": 4,
+        "prompt": "difficulty",
+        "answer": "difficult",
+        "explanation": {
+          "context": "第一批书中有些书不适合年幼读者阅读，后文提到教师按年龄和主题整理书籍。",
+          "grammar": "too 后接形容词；difficulty 是名词，需变为形容词 difficult。",
+          "reason": "正文已标出提示词 (difficulty)，此空考查词性转换。"
+        }
+      },
+      {
+        "number": 5,
+        "answer": "by",
+        "explanation": {
+          "context": "退休教师按照年龄和主题整理图书。",
+          "grammar": "by age and topic 表示“按年龄和主题”，by 在此作介词。",
+          "reason": "此空无提示词，考查介词 by，答案是一个词。"
+        }
+      }
+    ]
+  }
+]

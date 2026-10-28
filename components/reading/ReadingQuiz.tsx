@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { addReadingWord, readCustomWords, wordList, type Word } from "@/components/vocabulary/data";
+import { markReadingCompleted } from "@/components/reading/readingProgress";
 
 type Question = {
   type: string;
@@ -12,20 +14,24 @@ type Question = {
   optionExplanations: string[];
 };
 type Paragraph = { segments: { text: string; translation?: string }[] };
+type WordLookup = { word: Word | null; spelling: string; left: number; top: number; added: boolean };
 
-export default function ReadingQuiz({ questions, paragraphs }: { questions: Question[]; paragraphs: Paragraph[] }) {
+export default function ReadingQuiz({ articleId, questions, paragraphs }: { articleId: string; questions: Question[]; paragraphs: Paragraph[] }) {
   const [answers, setAnswers] = useState<(number | null)[]>(questions.map(() => null));
   const [submitted, setSubmitted] = useState(false);
   const [activeEvidenceQuestion, setActiveEvidenceQuestion] = useState<number | null>(null);
   const [studentEvidence, setStudentEvidence] = useState<Record<number, string>>({});
   const [selectionNotice, setSelectionNotice] = useState("");
   const [activeTranslation, setActiveTranslation] = useState<string | null>(null);
+  const [wordLookup, setWordLookup] = useState<WordLookup | null>(null);
 
   useEffect(() => {
     function closeTranslation(event: PointerEvent) {
+      if (event.target instanceof Element && event.target.closest(".word-lookup-bubble")) return;
       if (!(event.target instanceof Element) || !event.target.closest(".long-sentence")) {
         setActiveTranslation(null);
       }
+      setWordLookup(null);
     }
     document.addEventListener("pointerdown", closeTranslation);
     return () => document.removeEventListener("pointerdown", closeTranslation);
@@ -33,6 +39,7 @@ export default function ReadingQuiz({ questions, paragraphs }: { questions: Ques
 
   function submit() {
     if (answers.some((answer) => answer === null)) return;
+    markReadingCompleted(articleId);
     setSubmitted(true);
   }
 
@@ -58,8 +65,22 @@ export default function ReadingQuiz({ questions, paragraphs }: { questions: Ques
     setSelectionNotice("");
   }
 
+  function lookupSelectedWord() {
+    const selection = window.getSelection();
+    const selected = selection?.toString().trim() ?? "";
+    const spelling = selected.match(/[A-Za-z]+(?:['’][A-Za-z]+|-[A-Za-z]+)*/)?.[0];
+    const range = selection?.rangeCount ? selection.getRangeAt(0).getBoundingClientRect() : null;
+    if (!spelling || !range) return;
+    const normalized = spelling.toLocaleLowerCase();
+    const localWord = wordList.find((word) => word.spelling.toLocaleLowerCase() === normalized) ??
+      readCustomWords().find((word) => word.spelling.toLocaleLowerCase() === normalized) ?? null;
+    const left = Math.max(12, Math.min(range.left, window.innerWidth - 320));
+    const top = Math.max(12, Math.min(range.bottom + 8, window.innerHeight - 170));
+    setWordLookup({ word: localWord, spelling, left, top, added: false });
+  }
+
   return <>
-    <section id="reading-passage" className={`reading-passage${activeEvidenceQuestion !== null ? " is-finding-evidence" : ""}`} aria-label="英文短文" onMouseUp={captureSelection} onTouchEnd={captureSelection}>
+    <section id="reading-passage" className={`reading-passage${activeEvidenceQuestion !== null ? " is-finding-evidence" : ""}`} aria-label="英文短文" onMouseUp={captureSelection} onTouchEnd={captureSelection} onDoubleClick={lookupSelectedWord}>
       {activeEvidenceQuestion !== null && <div className="evidence-instruction">正在为第 {activeEvidenceQuestion + 1} 题找依据：请回到原文，用鼠标划出你认为包含答案线索的句子（可以跨句）。</div>}
       {paragraphs.map((paragraph, paragraphIndex) => <p key={paragraphIndex}>{paragraph.segments.map((segment, segmentIndex) => {
         if (!segment.translation) return <span key={segmentIndex}>{segment.text}</span>;
@@ -72,6 +93,15 @@ export default function ReadingQuiz({ questions, paragraphs }: { questions: Ques
       })}</p>)}
       {selectionNotice && <div className="selection-notice" role="status">{selectionNotice}</div>}
     </section>
+    {wordLookup && <aside className="word-lookup-bubble" style={{ left: wordLookup.left, top: wordLookup.top }} role="dialog" aria-label={`${wordLookup.spelling} 词汇释义`}>
+      <button type="button" className="word-lookup-close" aria-label="关闭" onClick={() => setWordLookup(null)}>×</button>
+      <strong>{wordLookup.spelling}</strong>
+      {wordLookup.word ? <><small>{wordLookup.word.pronunciation} · {wordLookup.word.partOfSpeech}</small><p>{wordLookup.word.meaning}</p></> : <p>本地词典暂未收录这个词。</p>}
+      {wordLookup.added ? <span className="word-lookup-added" role="status">已添加到生词本，将进入单词记忆的未掌握词池。</span> : <button type="button" className="word-lookup-add" onClick={() => {
+        const result = addReadingWord(wordLookup.spelling);
+        setWordLookup((current) => current ? { ...current, word: result.word, added: true } : current);
+      }}>添加到生词本</button>}
+    </aside>}
     <section className="reading-quiz" aria-label="阅读理解题目">
       <div className="reading-quiz-heading"><span className="section-kicker">ONE PASSAGE · THREE QUESTIONS</span><h2>单篇精读</h2><p>先独立作答；答错后回到原文划出你认为的依据。</p></div>
       {questions.map((question, questionIndex) => {
