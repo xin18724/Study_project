@@ -86,5 +86,127 @@
       { "type": "推理判断题", "stem": "Why did some students still feel tired during the trial?", "options": ["The school removed breakfast from the schedule.", "They changed their bedtime to a later hour.", "Teachers gave them extra homework every morning.", "The first bell rang earlier than before."], "answer": 1, "explanation": "Some students used the later start to stay up later, which reduced the possible benefit of additional morning sleep.", "evidence": "Some simply stayed up later, so they did not feel more rested.", "optionExplanations": ["无中生有：文章没有说学校取消早餐。", "正确：熬夜时间随上课时间推迟，学生并未因此休息得更多。", "无中生有：文章没有提到早晨作业增加。", "与原文相反：上课开始时间推迟了。"] },
       { "type": "主旨大意题", "stem": "What is the main message of the passage?", "options": ["Every school should copy Green Hill's schedule immediately.", "A schedule change may help some people, but schools should consider different needs before deciding.", "Students should be responsible for solving all transport problems.", "Later school starts always improve every student's learning."], "answer": 1, "explanation": "The trial showed possible benefits as well as difficulties for different students and families, so the school plans to gather more information before deciding.", "evidence": "A policy affects people differently, so listening to them helps the school decide whether it truly works.", "optionExplanations": ["过度推断：文章没有建议所有学校立即照搬。", "正确：概括了试行结果不一，以及制定政策时要听取不同群体意见。", "偷换话题：交通只是部分学生的困难之一，不是文章主旨。", "与原文相反：文章说明改善并非对所有人都一样，也提出了实际困难。"] }
     ]
-  }
+  },
+{
+  "id": "a-garden-after-sunset",
+  "title": "A Garden After Sunset",
+  "difficulty": "高考中等",
+  "paragraphs": [
+    {
+      "segments": [
+        {
+          "text": "In one neighborhood, a small garden behind the library looked ordinary during the day. At sunset, however, its white flowers opened and released a sweet smell. "
+        },
+        {
+          "text": "Volunteers had planted them after noticing that moths often circled the streetlights but rarely visited the bright, tidy parks nearby.",
+          "translation": "志愿者们注意到，飞蛾常在路灯周围盘旋，却很少去附近那些明亮整洁的公园，于是种下了这些花。"
+        },
+        {
+          "text": " They wanted to learn whether a darker garden could help."
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "text": "For three weeks, the group turned off two garden lamps and placed a simple screen near the flowers. "
+        },
+        {
+          "text": "Each morning, students counted the moths caught briefly in the screen and released them afterward.",
+          "translation": "每天早上，学生们数一数短暂落在网上的飞蛾，然后把它们放走。"
+        },
+        {
+          "text": " They also recorded temperature and rain, since both could affect insect activity. The numbers did not prove that darkness alone attracted moths, but the garden received more visits on warm, dry nights."
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "text": "One student, Leo, suggested leaving every light off across the neighborhood. The librarian disagreed. People still needed safe paths, and some visitors felt uncomfortable in complete darkness. "
+        },
+        {
+          "text": "Instead, the group covered the lamps so light pointed down, and they kept the main walkway softly lit.",
+          "translation": "于是小组给灯罩上遮挡物，让光线朝下照射，同时让主要步道保持柔和的亮度。"
+        },
+        {
+          "text": " The flowers stayed visible to people while much of the garden remained dark."
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "text": "By the end of summer, the garden had become a place for evening walks and short science lessons. "
+        },
+        {
+          "text": "Volunteers could not claim that their small project had saved local moths, but they had learned to ask a better question: how can people share a space with wildlife without giving up useful light?",
+          "translation": "志愿者们不能断言这个小项目拯救了当地的飞蛾，但他们学会了提出一个更好的问题：人们怎样才能在保留实用照明的同时，与野生动物共享空间？"
+        },
+        {
+          "text": " The answer, they found, was to change where and when light was used."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "细节理解题",
+      "stem": "What information did the students record in addition to the number of moth visits?",
+      "options": [
+        "The temperature and the amount of rain.",
+        "The number of flowers that opened each evening.",
+        "The time each visitor left the garden.",
+        "The number of streetlights in the neighborhood."
+      ],
+      "answer": 0,
+      "explanation": "学生除了统计飞蛾，还记录了温度和降雨情况。文章说明这两项因素都可能影响昆虫活动。",
+      "evidence": "They also recorded temperature and rain, since both could affect insect activity.",
+      "optionExplanations": [
+        "正确：原文明确提到学生记录了温度和降雨。",
+        "无中生有：文章提到了花朵在日落后开放，但没有说学生统计花朵数量。",
+        "无中生有：文章没有记录访客离开花园的时间。",
+        "偷换概念：街灯是飞蛾活动的背景，学生记录的是温度和降雨。"
+      ]
+    },
+    {
+      "type": "推理判断题",
+      "stem": "Why did the librarian disagree with turning off every light in the neighborhood?",
+      "options": [
+        "The flowers needed bright light to open.",
+        "The group had already proved that darkness harmed moths.",
+        "People still needed safe paths, and complete darkness made some visitors uncomfortable.",
+        "The lamps could not be covered with anything."
+      ],
+      "answer": 2,
+      "explanation": "图书管理员考虑到花园也要供人使用：人们需要安全通行，有些访客也不适应完全黑暗。因此小组选择调整灯光方向并保留柔和照明。",
+      "evidence": "People still needed safe paths, and some visitors felt uncomfortable in complete darkness.",
+      "optionExplanations": [
+        "无中生有：原文没有说花朵需要明亮灯光才能开放。",
+        "无中生有：文章没有证明黑暗会伤害飞蛾；实验结果也没有证明黑暗是唯一原因。",
+        "正确：这两点正是图书管理员不同意全部关灯的原因。",
+        "与原文相反：小组后来确实给灯加了遮挡，让光线朝下。"
+      ]
+    },
+    {
+      "type": "主旨大意题",
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Neighborhood gardens should be kept completely dark to protect all insects.",
+        "A small project explored how to support moths while keeping useful lighting for people.",
+        "Streetlights are the only reason moths visit gardens.",
+        "Science projects can succeed only when they prove one clear cause."
+      ],
+      "answer": 1,
+      "explanation": "文章讲述了社区通过观察飞蛾、调整灯光，尝试兼顾野生动物和居民需求。结尾强调改变灯光使用的地点和时间，而不是彻底取消照明。",
+      "evidence": "The answer, they found, was to change where and when light was used.",
+      "optionExplanations": [
+        "过度概括：文章并未主张花园完全黑暗，主要步道仍保留柔和照明。",
+        "正确：概括了项目的观察过程和兼顾人类与野生动物需求的做法。",
+        "无中生有：文章没有认定街灯是飞蛾到访的唯一原因。",
+        "与原文相反：志愿者承认实验无法证明黑暗是唯一原因，但仍学到了如何改进照明。"
+      ]
+    }
+  ]
+}
 ]

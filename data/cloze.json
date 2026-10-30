@@ -100,5 +100,190 @@
       { "number": 4, "stem": "The new lunch helped her __4__ that two classmates liked the same books.", "options": ["discover", "forget", "promise", "hide"], "answer": 0, "explanation": { "contextLogic": "Mina 是新转来的学生，午餐交流让她知道两位同学也喜欢同类科幻书；后文说他们后来一起去图书馆。这里表示她通过交谈发现共同兴趣。", "optionAnalysis": "A discover“发现”适合描述原本不知道、后来了解到的信息；B forget“忘记”与得知共同爱好相反；C promise“承诺”后面通常接要做的事；D hide“隐藏”不能表达认识到共同兴趣。因此选 A。", "translation": "这次新的午餐安排让她发现，两位同学也喜欢同类科幻书。" } },
       { "number": 5, "stem": "Listening to students and making a small adjustment helped the new habit feel __5__.", "options": ["fair", "empty", "distant", "careless"], "answer": 0, "explanation": { "contextLogic": "学校发现有些学生需要查看公交变动信息，于是允许他们在必要时短暂使用手机。听取需求并调整规则后，学生大多支持每周一次无屏午餐，说明新安排显得合理、可接受。", "optionAnalysis": "A fair“公平的、合理的”，与学校照顾不同需求后形成的安排相符；B empty“空的”描述空间或内容；C distant“遥远的、疏远的”描述距离或关系；D careless“粗心的”描述人或行为，都无法说明规则是否合理。因此选 A。", "translation": "倾听学生并作出小幅调整，让这个新习惯显得更公平。" } }
     ]
+  },
+{
+    "id": "kai-bicycle-repair",
+    "title": "Learning to Repair Together",
+    "difficulty": "高考中等",
+    "paragraphs": [
+      "After moving to a new town, Kai found it difficult to make friends. One Saturday, he noticed a bicycle with a loose chain outside the community center. Its owner, Mr. Hu, was trying to fix it, so Kai offered to help. Kai had repaired bikes with his uncle, but he was still __1__: his first attempt made the chain tighter instead of smoother. Mr. Hu smiled and asked him to look carefully before trying again.",
+      "Mr. Hu showed Kai how to inspect the chain and test the pedals before choosing a tool. Kai started a notebook, writing down each problem and the repair that solved it. On later Saturdays, other children joined them. Some bikes belonged to families that could not afford a shop, so the community center provided simple spare parts. Kai learned to check every repair __2__ before returning a bicycle.",
+      "Kai still made mistakes, but he no longer saw them as a reason to __3__. He wrote down what had gone wrong and asked Mr. Hu for advice. When one boy's brake cable was worn, Kai explained the problem and asked the boy's father to donate old tools __4__ other children could use them. By the end of the year, the center had a regular Saturday repair table. Kai had moved to town hoping to find friends; instead, he found a way to help. He learned that progress did not mean fixing every bike alone. It meant sharing what he had learned so that more people could work __5__."
+    ],
+    "questions": [
+      {
+        "number": 1,
+        "stem": "Kai had repaired bikes with his uncle, but he was still __1__: his first attempt made the chain tighter instead of smoother.",
+        "options": [
+          "careful",
+          "confident",
+          "unsuccessful",
+          "ordinary"
+        ],
+        "answer": 2,
+        "explanation": {
+          "contextLogic": "前文说 Kai 虽然跟叔叔修过自行车，但这是他第一次独自尝试；冒号后的结果说明他把链条弄得更紧，第一次尝试没有成功。",
+          "optionAnalysis": "A careful 意为“小心的”，文中没有说明他的操作态度；B confident 意为“自信的”，和第一次操作失败的结果不符；C unsuccessful 意为“未成功的”，与链条变得更紧这一结果相符；D ordinary 意为“普通的”，不能概括尝试的结果。因此选 C。",
+          "translation": "Kai 曾跟叔叔修过自行车，但这次尝试仍未成功：他的第一次操作让链条更紧了，而不是更顺畅。"
+        }
+      },
+      {
+        "number": 2,
+        "stem": "Kai learned to check every repair __2__ before returning a bicycle.",
+        "options": [
+          "carefully",
+          "loudly",
+          "rarely",
+          "secretly"
+        ],
+        "answer": 0,
+        "explanation": {
+          "contextLogic": "前文提到 Kai 学会了检查链条和测试踏板，之后还把每种问题及解决办法记在笔记本里。修理完成后、归还自行车前，他需要确认修理是否妥当。",
+          "optionAnalysis": "A carefully 意为“仔细地”，符合归还前检查修理结果的做法；B loudly 意为“大声地”，描述声音；C rarely 意为“很少”，表示频率；D secretly 意为“秘密地”，强调不让人知道，都不符合检查维修质量的语境。因此选 A。",
+          "translation": "Kai 学会了在归还自行车之前仔细检查每一处修理。"
+        }
+      },
+      {
+        "number": 3,
+        "stem": "Kai still made mistakes, but he no longer saw them as a reason to __3__.",
+        "options": [
+          "lend",
+          "smile",
+          "enter",
+          "quit"
+        ],
+        "answer": 3,
+        "explanation": {
+          "contextLogic": "前半句承认 Kai 仍会犯错，but 后面转向他的变化：他不再把错误当成停止修理的理由，而是记录问题并向 Mr. Hu 请教。",
+          "optionAnalysis": "A lend 意为“借出”，与错误和继续练习无关；B smile 意为“微笑”，不能表示停止做某事；C enter 意为“进入”，不符合 reason to 后的语义；D quit 意为“放弃、停止”，与错误是否会让他停止练习直接对应。因此选 D。",
+          "translation": "Kai 仍然会犯错，但他不再把错误看作放弃的理由。"
+        }
+      },
+      {
+        "number": 4,
+        "stem": "Kai asked the boy's father to donate old tools __4__ other children could use them.",
+        "options": [
+          "but",
+          "so",
+          "unless",
+          "while"
+        ],
+        "answer": 1,
+        "explanation": {
+          "contextLogic": "Kai 请男孩的父亲捐出旧工具，后半句说明这样做的目的：让其他孩子也能使用工具。",
+          "optionAnalysis": "A but 表转折，前后没有转折关系；B so 在这里引出结果或目的，表示“这样一来/以便”；C unless 表示“除非”，不符合捐工具的目的；D while 表示“当……时”或“然而”，也无法连接出“让其他孩子使用”的目的。因此选 B。",
+          "translation": "Kai 请男孩的父亲捐出旧工具，这样其他孩子也能使用它们。"
+        }
+      },
+      {
+        "number": 5,
+        "stem": "It meant sharing what he had learned so that more people could work __5__.",
+        "options": [
+          "loudly",
+          "early",
+          "together",
+          "upstairs"
+        ],
+        "answer": 2,
+        "explanation": {
+          "contextLogic": "文章先写其他孩子加入修车活动，结尾又强调 Kai 分享所学，让更多人参与。上下文突出的是合作，而不是 Kai 一个人修好所有自行车。",
+          "optionAnalysis": "A loudly 描述声音大小；B early 表示时间早；C together 意为“一起”，与 sharing what he had learned 和更多人共同参与相呼应；D upstairs 表示位置在楼上，都不能表达合作。因此选 C。",
+          "translation": "这意味着分享他学到的东西，让更多人能够一起做这件事。"
+        }
+      }
+    ]
+  },
+{
+    "id": "why-seeds-wait-for-rain",
+    "title": "Why Some Seeds Wait for Rain",
+    "difficulty": "高考中等",
+    "paragraphs": [
+      "After a dry summer, a hillside may look empty, but many seeds remain in the soil. A brief shower wets only the upper ground. If a seed begins growing and then the soil dries, the tiny root may __1__. That is one reason some plants in dry regions respond mainly to longer periods of rain rather than every light shower. Water that reaches deeper into the ground can support a seedling for longer.",
+      "Growth begins with germination. The seed coat opens, a small root grows downward, and a shoot moves toward light. At this early stage, the young plant depends on food stored inside the seed. Because its reserves are limited, the timing of germination __2__. If a seed sprouts when water is likely to last, its chances improve; if not, it may not survive.",
+      "Some plants also spread germination over __3__: only part of a seed crop sprouts in one season, while other seeds remain dormant. If conditions are poor this year, those seeds may germinate later. This does not guarantee they will grow; temperature, soil, and other factors also affect each seed. Still, different starting times can reduce the risk that one dry period destroys every new plant.",
+      "Seeds do not predict the weather. Their responses come from inherited traits and environmental signals such as moisture and temperature. When enough seedlings start growing under suitable conditions, more of them may __4__ and eventually produce seeds of their own. A bare hillside can therefore hold the beginning of a future field of flowers, even when no green shoots are __5__ yet."
+    ],
+    "questions": [
+      {
+        "number": 1,
+        "stem": "If a seed begins growing and then the soil dries, the tiny root may __1__.",
+        "options": [
+          "spread",
+          "die",
+          "shine",
+          "melt"
+        ],
+        "answer": 1,
+        "explanation": {
+          "contextLogic": "前文说短暂的阵雨只湿润表层土壤；如果种子开始生长后土壤又干了，幼小的根就可能无法继续获得水分。",
+          "optionAnalysis": "A spread 意为“传播、蔓延”，不是根因缺水可能发生的结果；B die 意为“死亡”，符合幼根在缺水时无法存活的语境；C shine 意为“发光”，与根的生长无关；D melt 意为“融化”，不适用于植物根。因此选 B。",
+          "translation": "如果种子开始生长后土壤又干了，幼小的根可能会死亡。"
+        }
+      },
+      {
+        "number": 2,
+        "stem": "Because its reserves are limited, the timing of germination __2__.",
+        "options": [
+          "arrives",
+          "disappears",
+          "refuses",
+          "matters"
+        ],
+        "answer": 3,
+        "explanation": {
+          "contextLogic": "前文提到幼苗早期依靠种子储存的养分，而这些储备有限；后文说明水分能否持续会影响幼苗能否存活。因此种子何时发芽很重要。",
+          "optionAnalysis": "A arrives 意为“到达”，主语和语义都不合；B disappears 意为“消失”，无法表达时间选择的重要性；C refuses 意为“拒绝”，不能用于说明发芽时间的重要程度；D matters 意为“要紧、有影响”，符合有限储备和水分条件影响存活的逻辑。因此选 D。",
+          "translation": "由于种子的储备有限，发芽的时间很重要。"
+        }
+      },
+      {
+        "number": 3,
+        "stem": "Some plants also spread germination over __3__: only part of a seed crop sprouts in one season, while other seeds remain dormant.",
+        "options": [
+          "time",
+          "height",
+          "price",
+          "direction"
+        ],
+        "answer": 0,
+        "explanation": {
+          "contextLogic": "后面解释说一部分种子在某个季节发芽，另一部分继续休眠，等以后再发芽。这表示发芽被分散到不同时间。",
+          "optionAnalysis": "A time 意为“时间”，可与 over 搭配表示“分散在一段时间内”；B height 意为“高度”；C price 意为“价格”；D direction 意为“方向”，都不能概括不同种子在不同季节发芽的现象。因此选 A。",
+          "translation": "一些植物也会把发芽分散到不同时间：每个季节只有一部分种子发芽。"
+        }
+      },
+      {
+        "number": 4,
+        "stem": "When enough seedlings start growing under suitable conditions, more of them may __4__ and eventually produce seeds of their own.",
+        "options": [
+          "compete",
+          "remember",
+          "survive",
+          "disappear"
+        ],
+        "answer": 2,
+        "explanation": {
+          "contextLogic": "句中先说幼苗在适宜条件下开始生长，随后说它们将来能够产生自己的种子。要产生种子，幼苗首先需要存活下来。",
+          "optionAnalysis": "A compete 意为“竞争”，但竞争本身不等于活下来并结籽；B remember 意为“记得”，不能用于植物的生长结果；C survive 意为“存活”，与 eventually produce seeds 构成符合生长过程的逻辑；D disappear 意为“消失”，与后来产生种子相反。因此选 C。",
+          "translation": "当足够多的幼苗在适宜条件下开始生长时，其中会有更多幼苗存活下来，并最终结出自己的种子。"
+        }
+      },
+      {
+        "number": 5,
+        "stem": "A bare hillside can therefore hold the beginning of a future field of flowers, even when no green shoots are __5__ yet.",
+        "options": [
+          "asleep",
+          "visible",
+          "hungry",
+          "ready"
+        ],
+        "answer": 1,
+        "explanation": {
+          "contextLogic": "文章开头说山坡表面看起来空无一物，但土壤里可能有仍在休眠的种子。结尾再次强调，即使眼下看不到绿色幼芽，未来仍可能长出花田。",
+          "optionAnalysis": "A asleep 意为“睡着的”，通常描述生物状态，不适合 no green shoots are asleep 的表达；B visible 意为“看得见的”，与 no green shoots 和山坡表面暂时没有新芽的意思吻合；C hungry 意为“饥饿的”，不适用于幼芽；D ready 意为“准备好的”，不能准确表达“看不见”。因此选 B。",
+          "translation": "因此，即使现在还看不到绿色幼芽，光秃秃的山坡下也可能孕育着未来的花田。"
+        }
+      }
+    ]
   }
 ]

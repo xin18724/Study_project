@@ -7,7 +7,7 @@ const filePath =
 
 const functionWords = new Set([
   "a", "an", "the",
-  "in", "on", "at", "by", "from", "with", "for", "of", "to",
+  "in", "on", "at", "by", "from", "with", "for", "of", "to", "over",
   "and", "but", "or", "if", "whether", "that", "because", "although", "while", "since", "as", "unless",
   "who", "whom", "whose", "which", "where", "when", "why", "how",
 ]);
@@ -31,8 +31,8 @@ function escapeRegExp(value) {
 try {
   const articles = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
-  if (!Array.isArray(articles) || articles.length !== 2) {
-    fail("文件必须包含 2 篇文章。");
+  if (!Array.isArray(articles) || articles.length === 0) {
+    fail("文件必须包含至少 1 篇文章。");
   }
 
   const articleIds = new Set();

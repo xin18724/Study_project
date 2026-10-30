@@ -117,5 +117,184 @@
         }
       }
     ]
+  },
+{
+    "id": "customs-at-the-door",
+    "title": "A Welcome at the Door",
+    "difficulty": "高考中等",
+    "paragraphs": [
+      "At our school's international evening, Lina shared a custom from her Japanese family. Before entering a home, guests often leave outdoor shoes by the door and change into indoor slippers. This helps keep floors clean, but Lina said each family may have different habits. She __1__(explain) that guests should notice what a host prefers. I learned it is polite __2__ ask before entering a room when unsure.",
+      "I tried on a pair of slippers and found them surprisingly __3__(comfort). Another student asked __4__ guests needed to bring their own. Lina said most hosts provide slippers, though visitors can check first. The conversation changed how I viewed customs. A tradition is not just a rule; it can show care for others. Asking respectful questions helps unfamiliar habits feel less strange and makes the visit more __5__(enjoy)."
+    ],
+    "gaps": [
+      {
+        "number": 1,
+        "prompt": "explain",
+        "answer": "explained",
+        "explanation": {
+          "context": "Lina 在学校的国际文化活动上介绍家里的习俗，文章以过去发生的经历为主线。",
+          "grammar": "此处需要谓语动词，主语 Lina 为第三人称单数；叙述发生在过去，应用一般过去时。",
+          "reason": "提示词 explain 是动词，结合过去时间变为 explained。"
+        }
+      },
+      {
+        "number": 2,
+        "answer": "to",
+        "explanation": {
+          "context": "作者说自己学到：不确定时，进入房间前先询问是礼貌的做法。",
+          "grammar": "句型 it is + 形容词 + to do sth. 中，to 引出真正的动作内容。",
+          "reason": "此处考查不定式符号 to，答案为一个虚词。"
+        }
+      },
+      {
+        "number": 3,
+        "prompt": "comfort",
+        "answer": "comfortable",
+        "explanation": {
+          "context": "作者试穿拖鞋后，接着描述穿着感受，语义上是“出乎意料地舒服”。",
+          "grammar": "find + 宾语 + 宾语补足语；代词 them 后需要形容词说明拖鞋的状态。",
+          "reason": "提示词 comfort 是名词，需转换为形容词 comfortable。"
+        }
+      },
+      {
+        "number": 4,
+        "answer": "whether",
+        "explanation": {
+          "context": "另一位学生想知道客人是否需要自带拖鞋，后文 Lina 回答大多数主人会提供。",
+          "grammar": "whether 引导 ask 后的宾语从句，表示“是否”。",
+          "reason": "此处考查引导间接一般疑问句的连词 whether，答案是一个词。"
+        }
+      },
+      {
+        "number": 5,
+        "prompt": "enjoy",
+        "answer": "enjoyable",
+        "explanation": {
+          "context": "作者认为尊重地询问能让陌生习俗不再那么奇怪，也能让拜访体验更好。",
+          "grammar": "more 后需要形容词作表语，说明 visit 的性质。",
+          "reason": "提示词 enjoy 是动词，需加后缀 -able 转换为形容词 enjoyable。"
+        }
+      }
+    ]
+  },
+{
+    "id": "seeds-wait-for-rain",
+    "title": "Why Some Seeds Wait for Rain",
+    "difficulty": "高考中等",
+    "paragraphs": [
+      "After a dry summer, a hillside may look empty, but many seeds remain in the soil. A brief shower wets only the surface. If a seed begins growing and the soil soon dries, its tiny root may __1__(survival). Some plants in dry regions respond mainly to longer periods of rain, which can soak deeper.",
+      "Growth begins when the seed coat opens. A small root grows downward, and a shoot moves toward light. At first, the young plant uses food stored inside the seed. Because this reserve is limited, timing matters __2__ great deal.",
+      "Some plants spread germination __3__ time: only part of a seed crop sprouts in one season, while the rest remain dormant. The __4__(develop) of each seedling depends on water and temperature. Under suitable conditions, a seedling may become __5__(visibility) above the soil. Spreading germination can reduce the risk that one dry spell destroys every new plant."
+    ],
+    "gaps": [
+      {
+        "number": 1,
+        "prompt": "survival",
+        "answer": "survive",
+        "explanation": {
+          "context": "短暂降雨只湿润表层；如果幼苗开始生长后土壤很快变干，幼根可能无法存活。",
+          "grammar": "情态动词 may 后接动词原形。",
+          "reason": "提示词 survival 是名词，需转换为动词 survive。"
+        }
+      },
+      {
+        "number": 2,
+        "answer": "a",
+        "explanation": {
+          "context": "前文说明幼苗早期依靠种子储存的养分，后文强调水分持续与否会影响生长，因此发芽时机很重要。",
+          "grammar": "固定表达 matter a great deal 意为“非常重要”；great deal 前需用不定冠词 a。",
+          "reason": "此处考查冠词 a，是无提示词的单词填空。"
+        }
+      },
+      {
+        "number": 3,
+        "answer": "over",
+        "explanation": {
+          "context": "后文说明同一批种子不会在一个季节全部发芽，剩余种子会继续休眠，之后再发芽，表示发芽被分散到一段时间内。",
+          "grammar": "spread sth. over time 表示“把某事分散到一段时间里”，over 在此作介词。",
+          "reason": "此处考查介词 over，答案为一个词。"
+        }
+      },
+      {
+        "number": 4,
+        "prompt": "develop",
+        "answer": "development",
+        "explanation": {
+          "context": "句子说明幼苗的成长受水分和温度影响。",
+          "grammar": "定冠词 The 后、谓语 depends 前需要名词作主语中心词。",
+          "reason": "提示词 develop 是动词，需加后缀 -ment 转换为名词 development。"
+        }
+      },
+      {
+        "number": 5,
+        "prompt": "visibility",
+        "answer": "visible",
+        "explanation": {
+          "context": "在适宜条件下，幼苗长出土面，变得能够被看见。",
+          "grammar": "系动词 become 后接形容词作表语。",
+          "reason": "提示词 visibility 是名词，需转换为形容词 visible。"
+        }
+      }
+    ]
+  },
+{
+    "id": "fair-room-booking",
+    "title": "A Fairer Way to Book a Study Room",
+    "difficulty": "高考中等",
+    "paragraphs": [
+      "At school, the library tested an online system for booking study rooms. Students could reserve a room instead of waiting in line. Some worried it would be __1__(confuse), so the librarian added clear instructions and gave a short demonstration.",
+      "Students soon learned __2__ to choose a time and cancel a booking they no longer needed. The system sent a reminder before each booking. After a month, rooms were used more __3__(regular) than before.",
+      "Still, some students had limited phone access. The library kept a paper sign-up sheet __4__ anyone needed it, so both methods worked side by side. The trial taught the school that useful technology should make a task easier without __5__(exclude) students. In this way, convenience did not come at the cost of fairness."
+    ],
+    "gaps": [
+      {
+        "number": 1,
+        "prompt": "confuse",
+        "answer": "confusing",
+        "explanation": {
+          "context": "一些学生担心新系统不容易使用，因此图书管理员补充了清晰说明并进行了演示。",
+          "grammar": "系动词 be 后需要形容词作表语，描述 system 的特点；事物令人产生某种感受时用 -ing 形式形容词。",
+          "reason": "提示词 confuse 是动词，变为 confusing，表示“令人困惑的”。"
+        }
+      },
+      {
+        "number": 2,
+        "answer": "how",
+        "explanation": {
+          "context": "学生逐渐学会选择时间并取消不再需要的预约，句子说明他们学会了操作方法。",
+          "grammar": "learned 后接宾语从句；how 表示“如何”，引导从句并修饰 to choose。",
+          "reason": "此处考查疑问副词 how，答案是一个词。"
+        }
+      },
+      {
+        "number": 3,
+        "prompt": "regular",
+        "answer": "regularly",
+        "explanation": {
+          "context": "一个月后，图书管理员发现自习室被使用的频率比以前更有规律。",
+          "grammar": "修饰被动结构 were used，需要副词。",
+          "reason": "提示词 regular 是形容词，加 -ly 转换为副词 regularly。"
+        }
+      },
+      {
+        "number": 4,
+        "answer": "if",
+        "explanation": {
+          "context": "有些学生无法方便地使用手机，图书馆因此保留纸质登记表，以备有人需要时使用。",
+          "grammar": "if 引导条件状语从句，表示“如果”。",
+          "reason": "此处考查连词 if，答案为一个词。"
+        }
+      },
+      {
+        "number": 5,
+        "prompt": "exclude",
+        "answer": "excluding",
+        "explanation": {
+          "context": "短文指出技术应让任务更方便，同时照顾手机使用受限的学生，不应把他们排除在外。",
+          "grammar": "介词 without 后接名词或动名词；这里需要动名词形式。",
+          "reason": "提示词 exclude 是动词，应用 -ing 形式 excluding。"
+        }
+      }
+    ]
   }
 ]
